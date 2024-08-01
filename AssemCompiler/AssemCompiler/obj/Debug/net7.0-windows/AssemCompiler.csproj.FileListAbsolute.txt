@@ -1,0 +1,16 @@
+C:\Users\MOHAMED\source\repos\AssemCompiler\AssemCompiler\bin\Debug\net7.0-windows\AssemCompiler.exe
+C:\Users\MOHAMED\source\repos\AssemCompiler\AssemCompiler\bin\Debug\net7.0-windows\AssemCompiler.deps.json
+C:\Users\MOHAMED\source\repos\AssemCompiler\AssemCompiler\bin\Debug\net7.0-windows\AssemCompiler.runtimeconfig.json
+C:\Users\MOHAMED\source\repos\AssemCompiler\AssemCompiler\bin\Debug\net7.0-windows\AssemCompiler.dll
+C:\Users\MOHAMED\source\repos\AssemCompiler\AssemCompiler\bin\Debug\net7.0-windows\AssemCompiler.pdb
+C:\Users\MOHAMED\source\repos\AssemCompiler\AssemCompiler\obj\Debug\net7.0-windows\AssemCompiler.Form1.resources
+C:\Users\MOHAMED\source\repos\AssemCompiler\AssemCompiler\obj\Debug\net7.0-windows\AssemCompiler.csproj.GenerateResource.cache
+C:\Users\MOHAMED\source\repos\AssemCompiler\AssemCompiler\obj\Debug\net7.0-windows\AssemCompiler.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MOHAMED\source\repos\AssemCompiler\AssemCompiler\obj\Debug\net7.0-windows\AssemCompiler.AssemblyInfoInputs.cache
+C:\Users\MOHAMED\source\repos\AssemCompiler\AssemCompiler\obj\Debug\net7.0-windows\AssemCompiler.AssemblyInfo.cs
+C:\Users\MOHAMED\source\repos\AssemCompiler\AssemCompiler\obj\Debug\net7.0-windows\AssemCompiler.csproj.CoreCompileInputs.cache
+C:\Users\MOHAMED\source\repos\AssemCompiler\AssemCompiler\obj\Debug\net7.0-windows\AssemCompiler.dll
+C:\Users\MOHAMED\source\repos\AssemCompiler\AssemCompiler\obj\Debug\net7.0-windows\refint\AssemCompiler.dll
+C:\Users\MOHAMED\source\repos\AssemCompiler\AssemCompiler\obj\Debug\net7.0-windows\AssemCompiler.pdb
+C:\Users\MOHAMED\source\repos\AssemCompiler\AssemCompiler\obj\Debug\net7.0-windows\AssemCompiler.genruntimeconfig.cache
+C:\Users\MOHAMED\source\repos\AssemCompiler\AssemCompiler\obj\Debug\net7.0-windows\ref\AssemCompiler.dll
