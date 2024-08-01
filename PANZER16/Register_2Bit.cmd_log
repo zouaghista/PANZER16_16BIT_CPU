@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_2Bit.xst" -ofn "E:/CPU/RTL/PANZER16/Register_2Bit.syr" 

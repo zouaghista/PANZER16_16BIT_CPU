@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Mux3_3.xst" -ofn "E:/CPU/RTL/PANZER16/Mux3_3.syr" 

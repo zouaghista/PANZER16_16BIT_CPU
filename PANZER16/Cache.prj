@@ -1,0 +1,8 @@
+vhdl work "Register_16Bit.vhd"
+vhdl work "Mux16-2.vhd"
+vhdl work "Register_4Slot_Fifo.vhd"
+vhdl work "Incrementer.vhd"
+vhdl work "MemoryOutManager.vhd"
+vhdl work "InstManager.vhd"
+vhdl work "DeMux16_2.vhd"
+vhdl work "Cache.vhd"

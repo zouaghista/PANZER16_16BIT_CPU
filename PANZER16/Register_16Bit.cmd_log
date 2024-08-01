@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_16Bit.xst" -ofn "E:/CPU/RTL/PANZER16/Register_16Bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 Register_16Bit.ngc Register_16Bit.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Register_16Bit_map.ncd Register_16Bit.ngd Register_16Bit.pcf 
+par -w -intstyle ise -ol high -mt off Register_16Bit_map.ncd Register_16Bit.ncd Register_16Bit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Register_16Bit.twx Register_16Bit.ncd -o Register_16Bit.twr Register_16Bit.pcf 
+bitgen -intstyle ise -f Register_16Bit.ut Register_16Bit.ncd 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_16Bit.xst" -ofn "E:/CPU/RTL/PANZER16/Register_16Bit.syr" 

@@ -1,0 +1,13 @@
+# Output products list for <CompareUnit>
+CompareUnit.asy
+CompareUnit.gise
+CompareUnit.ngc
+CompareUnit.sym
+CompareUnit.vhd
+CompareUnit.vho
+CompareUnit.xco
+CompareUnit.xise
+CompareUnit_flist.txt
+CompareUnit_readme.txt
+CompareUnit_xmdf.tcl
+_xmsgs\pn_parser.xmsgs

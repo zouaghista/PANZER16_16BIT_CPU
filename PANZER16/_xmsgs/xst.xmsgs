@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="89" delta="old" >"E:\CPU\RTL\PANZER16\InstManagerV2.vhd" Line 91: &lt;<arg fmt="%s" index="1">demux1_4</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\CPU\RTL\PANZER16\InstManagerV2.vhd" Line 135: Assignment to <arg fmt="%s" index="1">full</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"E:\CPU\RTL\PANZER16\InstManagerV2.vhd" Line 107: Net &lt;<arg fmt="%s" index="1">InPointerInput[1]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"E:\CPU\RTL\PANZER16\InstManagerV2.vhd" Line 110: Net &lt;<arg fmt="%s" index="1">RegAdressSelect</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"E:\CPU\RTL\PANZER16\InstManagerV2.vhd" Line 111: Net &lt;<arg fmt="%s" index="1">SelInPointerInc</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"E:\CPU\RTL\PANZER16\InstManagerV2.vhd" Line 116: Net &lt;<arg fmt="%s" index="1">EnableCachReg</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">E:\CPU\RTL\PANZER16\InstManagerV2.vhd</arg>&quot; line <arg fmt="%d" index="2">123</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">AdressRegister</arg>&gt; of block &lt;<arg fmt="%s" index="4">Register_16Bit</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">InstManagerV2</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">E:\CPU\RTL\PANZER16\InstManagerV2.vhd</arg>&quot; line <arg fmt="%d" index="2">124</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">AdressIncrement</arg>&gt; of block &lt;<arg fmt="%s" index="4">Incrementer</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">InstManagerV2</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">E:\CPU\RTL\PANZER16\InstManagerV2.vhd</arg>&quot; line <arg fmt="%d" index="2">125</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">TempAdressRegister</arg>&gt; of block &lt;<arg fmt="%s" index="4">Register_16Bit</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">InstManagerV2</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">E:\CPU\RTL\PANZER16\InstManagerV2.vhd</arg>&quot; line <arg fmt="%d" index="2">126</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">AdressRegInputMux</arg>&gt; of block &lt;<arg fmt="%s" index="4">Mux16_2</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">InstManagerV2</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">PReady</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CPU\RTL\PANZER16\InstManagerV2.vhd</arg>&quot; line <arg fmt="%s" index="2">129</arg>: Output port &lt;<arg fmt="%s" index="3">DataOut</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">InPointerInc</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\CPU\RTL\PANZER16\InstManagerV2.vhd</arg>&quot; line <arg fmt="%s" index="2">130</arg>: Output port &lt;<arg fmt="%s" index="3">DataOut</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">OutPointerInc</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">InPointerInput</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">OutPointerInput</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">RegAdressSelect</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">RegAdressIncrement</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">RegInPointerSelect</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">SelInPointerInc</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">EnableCachReg</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">dout_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">InPointer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">dout_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">InPointer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">dout_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">OutPointer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">dout_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">OutPointer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">dout_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">InPointerInc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">InCarry</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">InstManagerV2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dout_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InPointerInc</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dout_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InPointerInc</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dout_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">OutPointerInc</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dout_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">OutPointerInc</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">RegOutPointerSelect</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">InPointer/dout_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;InPointer/dout_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">OutPointer/dout_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;OutPointer/dout_0&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">OutPointer/dout_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">InstManagerV2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">InPointer/dout_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">InstManagerV2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">InPointerInc/dout_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">InstManagerV2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">InCarry</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">InstManagerV2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">OutPointerInc/dout_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">OutPointerInc/dout_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">InPointerInc/dout_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">InPointerInc/dout_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">RegOutPointerSelect</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">OutPointerInc/dout_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">InstManagerV2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">OutCarry</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">InstManagerV2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[3].reg/dout_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[3].reg/dout_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[3].reg/dout_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[3].reg/dout_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[3].reg/dout_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[3].reg/dout_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[3].reg/dout_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[3].reg/dout_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[3].reg/dout_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[3].reg/dout_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[3].reg/dout_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[3].reg/dout_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[3].reg/dout_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[3].reg/dout_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[3].reg/dout_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[3].reg/dout_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[2].reg/dout_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[2].reg/dout_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[2].reg/dout_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[2].reg/dout_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[2].reg/dout_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[2].reg/dout_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[2].reg/dout_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[2].reg/dout_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[2].reg/dout_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[2].reg/dout_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[2].reg/dout_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[2].reg/dout_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[2].reg/dout_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[2].reg/dout_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[2].reg/dout_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[2].reg/dout_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[1].reg/dout_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[1].reg/dout_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[1].reg/dout_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[1].reg/dout_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[1].reg/dout_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[1].reg/dout_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[1].reg/dout_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[1].reg/dout_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[1].reg/dout_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[1].reg/dout_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[1].reg/dout_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[1].reg/dout_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[1].reg/dout_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[1].reg/dout_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[1].reg/dout_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">internalReg[1].reg/dout_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ProcessRequest</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">SetRequest</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">SelOutPointerInc</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">InstManagerV2</arg>&gt;.
+</msg>
+
+</messages>
+

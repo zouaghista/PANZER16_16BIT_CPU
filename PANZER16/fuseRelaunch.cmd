@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "E:/CPU/RTL/PANZER16/InstManagerV2TestBench_isim_beh.exe" -prj "E:/CPU/RTL/PANZER16/InstManagerV2TestBench_beh.prj" "work.InstManagerV2TestBench" "work.glbl" 

@@ -1,0 +1,28 @@
+Command line:
+   InstManagerV2TestBench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53468
+
+Wed Jul 03 12:08:47 2024
+
+
+ Elaboration Time: 0.015625 sec
+
+ Current Memory Usage: 5147.02 Meg
+
+ Total Signals          : 142
+ Total Nets             : 438
+ Total Signal Drivers   : 58
+ Total Blocks           : 26
+ Total Primitive Blocks : 18
+ Total Processes        : 59
+ Total Traceable Variables  : 54
+ Total Scalar Nets and Variables : 17531
+
+ Total Simulation Time: 0.203125 sec
+
+ Current Memory Usage: 4675.16 Meg
+
+Wed Jul 03 14:32:50 2024
+

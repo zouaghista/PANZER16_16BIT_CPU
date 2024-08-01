@@ -1,0 +1,410 @@
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: ALU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ALU.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ALU"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : ALU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "E:\CPU\RTL\PANZER16\Mux16_4.vhd" into library work
+Parsing entity <Mux16_4>.
+Parsing architecture <Behavioral> of entity <mux16_4>.
+Parsing VHDL file "E:\CPU\RTL\PANZER16\Mux16-2.vhd" into library work
+Parsing entity <Mux16_2>.
+Parsing architecture <MuxArch> of entity <mux16_2>.
+Parsing VHDL file "E:\CPU\RTL\PANZER16\Multiplier.vhd" into library work
+Parsing entity <Multiplier>.
+Parsing architecture <Behavioral> of entity <multiplier>.
+Parsing VHDL file "E:\CPU\RTL\PANZER16\LogicAlgebraModule.vhd" into library work
+Parsing entity <LogicAlgebraModule>.
+Parsing architecture <Behavioral> of entity <logicalgebramodule>.
+Parsing VHDL file "E:\CPU\RTL\PANZER16\ComparisonUnit.vhd" into library work
+Parsing entity <ComparisonUnit>.
+Parsing architecture <Behavioral> of entity <comparisonunit>.
+Parsing VHDL file "E:\CPU\RTL\PANZER16\Adder.vhd" into library work
+Parsing entity <AdderSubtractor>.
+Parsing architecture <Behavioral> of entity <addersubtractor>.
+Parsing VHDL file "E:\CPU\RTL\PANZER16\ALU.vhd" into library work
+Parsing entity <ALU>.
+Parsing architecture <Behavioral> of entity <alu>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <ALU> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Multiplier> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <AdderSubtractor> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <LogicAlgebraModule> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ComparisonUnit> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Mux16_4> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Mux16_2> (architecture <MuxArch>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ALU>.
+    Related source file is "E:\CPU\RTL\PANZER16\ALU.vhd".
+    Summary:
+	inferred   3 Multiplexer(s).
+Unit <ALU> synthesized.
+
+Synthesizing Unit <Multiplier>.
+    Related source file is "E:\CPU\RTL\PANZER16\Multiplier.vhd".
+    Found 16x16-bit multiplier for signal <Output> created at line 41.
+    Summary:
+	inferred   1 Multiplier(s).
+Unit <Multiplier> synthesized.
+
+Synthesizing Unit <AdderSubtractor>.
+    Related source file is "E:\CPU\RTL\PANZER16\Adder.vhd".
+    Found 16-bit adder for signal <n0032> created at line 43.
+    Found 16-bit adder for signal <Input1[15]_GND_7_o_add_2_OUT> created at line 1241.
+    Found 16-bit subtractor for signal <GND_7_o_GND_7_o_sub_1_OUT<15:0>> created at line 44.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred   2 Multiplexer(s).
+Unit <AdderSubtractor> synthesized.
+
+Synthesizing Unit <LogicAlgebraModule>.
+    Related source file is "E:\CPU\RTL\PANZER16\LogicAlgebraModule.vhd".
+    Found 16-bit 4-to-1 multiplexer for signal <OutPut> created at line 32.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <LogicAlgebraModule> synthesized.
+
+Synthesizing Unit <ComparisonUnit>.
+    Related source file is "E:\CPU\RTL\PANZER16\ComparisonUnit.vhd".
+    Found 16-bit comparator equal for signal <Equal> created at line 42
+    Found 16-bit comparator greater for signal <Greater> created at line 43
+    Summary:
+	inferred   2 Comparator(s).
+Unit <ComparisonUnit> synthesized.
+
+Synthesizing Unit <Mux16_4>.
+    Related source file is "E:\CPU\RTL\PANZER16\Mux16_4.vhd".
+    Found 16-bit 4-to-1 multiplexer for signal <OutPut> created at line 32.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Mux16_4> synthesized.
+
+Synthesizing Unit <Mux16_2>.
+    Related source file is "E:\CPU\RTL\PANZER16\Mux16-2.vhd".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Mux16_2> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 16x16-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 3
+ 16-bit adder                                          : 2
+ 16-bit subtractor                                     : 1
+# Comparators                                          : 2
+ 16-bit comparator equal                               : 1
+ 16-bit comparator greater                             : 1
+# Multiplexers                                         : 8
+ 1-bit 2-to-1 multiplexer                              : 1
+ 16-bit 2-to-1 multiplexer                             : 3
+ 16-bit 4-to-1 multiplexer                             : 2
+ 2-bit 2-to-1 multiplexer                              : 2
+# Xors                                                 : 5
+ 1-bit xor2                                            : 4
+ 16-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 16x16-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 3
+ 16-bit adder                                          : 2
+ 16-bit subtractor                                     : 1
+# Comparators                                          : 2
+ 16-bit comparator equal                               : 1
+ 16-bit comparator greater                             : 1
+# Multiplexers                                         : 7
+ 16-bit 2-to-1 multiplexer                             : 3
+ 16-bit 4-to-1 multiplexer                             : 2
+ 2-bit 2-to-1 multiplexer                              : 2
+# Xors                                                 : 5
+ 1-bit xor2                                            : 4
+ 16-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <AdderSubtractor> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ALU, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : ALU.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 243
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 15
+#      LUT2                        : 33
+#      LUT3                        : 16
+#      LUT4                        : 15
+#      LUT5                        : 18
+#      LUT6                        : 37
+#      MUXCY                       : 58
+#      VCC                         : 1
+#      XORCY                       : 48
+# IO Buffers                       : 56
+#      IBUF                        : 38
+#      OBUF                        : 18
+# DSPs                             : 1
+#      DSP48A1                     : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                  135  out of   9112     1%  
+    Number used as Logic:               135  out of   9112     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    135
+   Number with an unused Flip Flop:     135  out of    135   100%  
+   Number with an unused LUT:             0  out of    135     0%  
+   Number of fully used LUT-FF pairs:     0  out of    135     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                          57
+ Number of bonded IOBs:                  56  out of    232    24%  
+
+Specific Feature Utilization:
+ Number of DSP48A1s:                      1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 10.425ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 4898 / 18
+-------------------------------------------------------------------------
+Delay:               10.425ns (Levels of Logic = 5)
+  Source:            DataIn1<15> (PAD)
+  Destination:       DataOut<14> (PAD)
+
+  Data Path: DataIn1<15> to DataOut<14>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   1.222   0.773  DataIn1_15_IBUF (DataIn1_15_IBUF)
+     DSP48A1:B15->M14      1   3.364   0.684  Multi/Mmult_Output (MultiOut<14>)
+     LUT5:I3->O            1   0.203   0.827  outputSecondMux/Mmux_Output63 (outputSecondMux/Mmux_Output62)
+     LUT6:I2->O            1   0.203   0.579  outputSecondMux/Mmux_Output64 (DataOut_14_OBUF)
+     OBUF:I->O                 2.571          DataOut_14_OBUF (DataOut<14>)
+    ----------------------------------------
+    Total                     10.425ns (7.563ns logic, 2.862ns route)
+                                       (72.5% logic, 27.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.85 secs
+ 
+--> 
+
+Total memory usage is 4502160 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

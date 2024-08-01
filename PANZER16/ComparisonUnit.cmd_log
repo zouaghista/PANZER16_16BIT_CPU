@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/ComparisonUnit.xst" -ofn "E:/CPU/RTL/PANZER16/ComparisonUnit.syr" 

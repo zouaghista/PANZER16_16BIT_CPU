@@ -1,0 +1,934 @@
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: MainCPU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "MainCPU.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "MainCPU"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : MainCPU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "E:\CPU\RTL\PANZER16\Register_16Bit.vhd" into library work
+Parsing entity <Register_16Bit>.
+Parsing architecture <RegisterArch> of entity <register_16bit>.
+Parsing VHDL file "E:\CPU\RTL\PANZER16\Mux16-2.vhd" into library work
+Parsing entity <Mux16_2>.
+Parsing architecture <MuxArch> of entity <mux16_2>.
+Parsing VHDL file "E:\CPU\RTL\PANZER16\Register_4Slot_Fifo.vhd" into library work
+Parsing entity <Register_4Slot_Fifo>.
+Parsing architecture <RegisterFifoArch> of entity <register_4slot_fifo>.
+Parsing VHDL file "E:\CPU\RTL\PANZER16\Incrementer.vhd" into library work
+Parsing entity <Incrementer>.
+Parsing architecture <Behavioral> of entity <incrementer>.
+Parsing VHDL file "E:\CPU\RTL\PANZER16\Register_2Bit.vhd" into library work
+Parsing entity <Register_2Bit>.
+Parsing architecture <Behavioral> of entity <register_2bit>.
+Parsing VHDL file "E:\CPU\RTL\PANZER16\Mux3_3.vhd" into library work
+Parsing entity <Mux3_3>.
+Parsing architecture <Behavioral> of entity <mux3_3>.
+Parsing VHDL file "E:\CPU\RTL\PANZER16\Mux16_8.vhd" into library work
+Parsing entity <Mux16_8>.
+Parsing architecture <Behavioral> of entity <mux16_8>.
+Parsing VHDL file "E:\CPU\RTL\PANZER16\Mux16_4.vhd" into library work
+Parsing entity <Mux16_4>.
+Parsing architecture <Behavioral> of entity <mux16_4>.
+Parsing VHDL file "E:\CPU\RTL\PANZER16\Multiplier.vhd" into library work
+Parsing entity <Multiplier>.
+Parsing architecture <Behavioral> of entity <multiplier>.
+Parsing VHDL file "E:\CPU\RTL\PANZER16\MemoryOutManager.vhd" into library work
+Parsing entity <MemoryOutManager>.
+Parsing architecture <Behavioral> of entity <memoryoutmanager>.
+Parsing VHDL file "E:\CPU\RTL\PANZER16\LogicAlgebraModule.vhd" into library work
+Parsing entity <LogicAlgebraModule>.
+Parsing architecture <Behavioral> of entity <logicalgebramodule>.
+Parsing VHDL file "E:\CPU\RTL\PANZER16\InstManager.vhd" into library work
+Parsing entity <InstManager>.
+Parsing architecture <Behavioral> of entity <instmanager>.
+Parsing VHDL file "E:\CPU\RTL\PANZER16\DeMux1_8.vhd" into library work
+Parsing entity <DeMux1_8>.
+Parsing architecture <Behavioral> of entity <demux1_8>.
+Parsing VHDL file "E:\CPU\RTL\PANZER16\ComparisonUnit.vhd" into library work
+Parsing entity <ComparisonUnit>.
+Parsing architecture <Behavioral> of entity <comparisonunit>.
+Parsing VHDL file "E:\CPU\RTL\PANZER16\Adder.vhd" into library work
+Parsing entity <AdderSubtractor>.
+Parsing architecture <Behavioral> of entity <addersubtractor>.
+Parsing VHDL file "E:\CPU\RTL\PANZER16\RegisterBank.vhd" into library work
+Parsing entity <RegisterBank>.
+Parsing architecture <Behavioral> of entity <registerbank>.
+Parsing VHDL file "E:\CPU\RTL\PANZER16\ControlUnit.vhd" into library work
+Parsing entity <ControlUnit>.
+Parsing architecture <Behavioral> of entity <controlunit>.
+Parsing VHDL file "E:\CPU\RTL\PANZER16\Cache.vhd" into library work
+Parsing entity <Cache>.
+Parsing architecture <Behavioral> of entity <cache>.
+Parsing VHDL file "E:\CPU\RTL\PANZER16\BusJoiner.vhd" into library work
+Parsing entity <BusJoiner>.
+Parsing architecture <Behavioral> of entity <busjoiner>.
+Parsing VHDL file "E:\CPU\RTL\PANZER16\ALU.vhd" into library work
+Parsing entity <ALU>.
+Parsing architecture <Behavioral> of entity <alu>.
+Parsing VHDL file "E:\CPU\RTL\PANZER16\MainCPU.vhd" into library work
+Parsing entity <MainCPU>.
+Parsing architecture <Behavioral> of entity <maincpu>.
+Parsing VHDL file "E:\CPU\RTL\PANZER16\ipcore_dir\Clock\example_design\Clock_exdes.vhd" into library work
+Parsing entity <Clock_exdes>.
+Parsing architecture <xilinx> of entity <clock_exdes>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <MainCPU> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Register_16Bit> (architecture <RegisterArch>) from library <work>.
+
+Elaborating entity <BusJoiner> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ALU> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Multiplier> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <AdderSubtractor> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <LogicAlgebraModule> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ComparisonUnit> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Mux16_4> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Mux16_2> (architecture <MuxArch>) from library <work>.
+
+Elaborating entity <RegisterBank> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <DeMux1_8> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Mux16_8> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Cache> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <InstManager> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Incrementer> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Register_4Slot_Fifo> (architecture <RegisterFifoArch>) from library <work>.
+INFO:HDLCompiler:679 - "E:\CPU\RTL\PANZER16\InstManager.vhd" Line 127. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "E:\CPU\RTL\PANZER16\InstManager.vhd" Line 141. Case statement is complete. others clause is never selected
+
+Elaborating entity <MemoryOutManager> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "E:\CPU\RTL\PANZER16\MemoryOutManager.vhd" Line 118. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "E:\CPU\RTL\PANZER16\MemoryOutManager.vhd" Line 132. Case statement is complete. others clause is never selected
+
+Elaborating entity <ControlUnit> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Register_2Bit> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Mux3_3> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "E:\CPU\RTL\PANZER16\ControlUnit.vhd" Line 278. Case statement is complete. others clause is never selected
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <MainCPU>.
+    Related source file is "E:\CPU\RTL\PANZER16\MainCPU.vhd".
+INFO:Xst:3210 - "E:\CPU\RTL\PANZER16\MainCPU.vhd" line 183: Output port <ALUInSelect> of the instance <CU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CPU\RTL\PANZER16\MainCPU.vhd" line 183: Output port <ALUOutSelect> of the instance <CU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CPU\RTL\PANZER16\MainCPU.vhd" line 204: Output port <DataOut> of the instance <ControlUnitBusJoiner> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <MainCPU> synthesized.
+
+Synthesizing Unit <Register_16Bit>.
+    Related source file is "E:\CPU\RTL\PANZER16\Register_16Bit.vhd".
+    Found 16-bit register for signal <dout>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <Register_16Bit> synthesized.
+
+Synthesizing Unit <BusJoiner>.
+    Related source file is "E:\CPU\RTL\PANZER16\BusJoiner.vhd".
+    Found 1-bit tristate buffer for signal <MainBus<15>> created at line 42
+    Found 1-bit tristate buffer for signal <MainBus<14>> created at line 42
+    Found 1-bit tristate buffer for signal <MainBus<13>> created at line 42
+    Found 1-bit tristate buffer for signal <MainBus<12>> created at line 42
+    Found 1-bit tristate buffer for signal <MainBus<11>> created at line 42
+    Found 1-bit tristate buffer for signal <MainBus<10>> created at line 42
+    Found 1-bit tristate buffer for signal <MainBus<9>> created at line 42
+    Found 1-bit tristate buffer for signal <MainBus<8>> created at line 42
+    Found 1-bit tristate buffer for signal <MainBus<7>> created at line 42
+    Found 1-bit tristate buffer for signal <MainBus<6>> created at line 42
+    Found 1-bit tristate buffer for signal <MainBus<5>> created at line 42
+    Found 1-bit tristate buffer for signal <MainBus<4>> created at line 42
+    Found 1-bit tristate buffer for signal <MainBus<3>> created at line 42
+    Found 1-bit tristate buffer for signal <MainBus<2>> created at line 42
+    Found 1-bit tristate buffer for signal <MainBus<1>> created at line 42
+    Found 1-bit tristate buffer for signal <MainBus<0>> created at line 42
+    Found 1-bit tristate buffer for signal <DataOut<15>> created at line 42
+    Found 1-bit tristate buffer for signal <DataOut<14>> created at line 42
+    Found 1-bit tristate buffer for signal <DataOut<13>> created at line 42
+    Found 1-bit tristate buffer for signal <DataOut<12>> created at line 42
+    Found 1-bit tristate buffer for signal <DataOut<11>> created at line 42
+    Found 1-bit tristate buffer for signal <DataOut<10>> created at line 42
+    Found 1-bit tristate buffer for signal <DataOut<9>> created at line 42
+    Found 1-bit tristate buffer for signal <DataOut<8>> created at line 42
+    Found 1-bit tristate buffer for signal <DataOut<7>> created at line 42
+    Found 1-bit tristate buffer for signal <DataOut<6>> created at line 42
+    Found 1-bit tristate buffer for signal <DataOut<5>> created at line 42
+    Found 1-bit tristate buffer for signal <DataOut<4>> created at line 42
+    Found 1-bit tristate buffer for signal <DataOut<3>> created at line 42
+    Found 1-bit tristate buffer for signal <DataOut<2>> created at line 42
+    Found 1-bit tristate buffer for signal <DataOut<1>> created at line 42
+    Found 1-bit tristate buffer for signal <DataOut<0>> created at line 42
+    Summary:
+	inferred  32 Tristate(s).
+Unit <BusJoiner> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "E:\CPU\RTL\PANZER16\ALU.vhd".
+WARNING:Xst:653 - Signal <Done> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	inferred   3 Multiplexer(s).
+Unit <ALU> synthesized.
+
+Synthesizing Unit <Multiplier>.
+    Related source file is "E:\CPU\RTL\PANZER16\Multiplier.vhd".
+    Found 16x16-bit multiplier for signal <Output> created at line 41.
+    Summary:
+	inferred   1 Multiplier(s).
+Unit <Multiplier> synthesized.
+
+Synthesizing Unit <AdderSubtractor>.
+    Related source file is "E:\CPU\RTL\PANZER16\Adder.vhd".
+    Found 17-bit adder for signal <n0026> created at line 43.
+    Found 17-bit adder for signal <GND_42_o_GND_42_o_add_2_OUT> created at line 1241.
+    Found 17-bit subtractor for signal <GND_42_o_GND_42_o_sub_1_OUT<16:0>> created at line 44.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred   2 Multiplexer(s).
+Unit <AdderSubtractor> synthesized.
+
+Synthesizing Unit <LogicAlgebraModule>.
+    Related source file is "E:\CPU\RTL\PANZER16\LogicAlgebraModule.vhd".
+    Found 16-bit 4-to-1 multiplexer for signal <OutPut> created at line 32.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <LogicAlgebraModule> synthesized.
+
+Synthesizing Unit <ComparisonUnit>.
+    Related source file is "E:\CPU\RTL\PANZER16\ComparisonUnit.vhd".
+    Found 16-bit comparator equal for signal <Equal> created at line 42
+    Found 16-bit comparator greater for signal <Greater> created at line 43
+    Summary:
+	inferred   2 Comparator(s).
+Unit <ComparisonUnit> synthesized.
+
+Synthesizing Unit <Mux16_4>.
+    Related source file is "E:\CPU\RTL\PANZER16\Mux16_4.vhd".
+    Found 16-bit 4-to-1 multiplexer for signal <OutPut> created at line 32.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Mux16_4> synthesized.
+
+Synthesizing Unit <Mux16_2>.
+    Related source file is "E:\CPU\RTL\PANZER16\Mux16-2.vhd".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Mux16_2> synthesized.
+
+Synthesizing Unit <RegisterBank>.
+    Related source file is "E:\CPU\RTL\PANZER16\RegisterBank.vhd".
+    Summary:
+	no macro.
+Unit <RegisterBank> synthesized.
+
+Synthesizing Unit <DeMux1_8>.
+    Related source file is "E:\CPU\RTL\PANZER16\DeMux1_8.vhd".
+    Summary:
+	inferred   8 Multiplexer(s).
+Unit <DeMux1_8> synthesized.
+
+Synthesizing Unit <Mux16_8>.
+    Related source file is "E:\CPU\RTL\PANZER16\Mux16_8.vhd".
+    Found 16-bit 8-to-1 multiplexer for signal <Output> created at line 32.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Mux16_8> synthesized.
+
+Synthesizing Unit <Cache>.
+    Related source file is "E:\CPU\RTL\PANZER16\Cache.vhd".
+WARNING:Xst:647 - Input <Sel<1:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "E:\CPU\RTL\PANZER16\Cache.vhd" line 110: Output port <Empty> of the instance <DataInBuffer> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CPU\RTL\PANZER16\Cache.vhd" line 112: Output port <Empty> of the instance <DataOutBuffer> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Cache> synthesized.
+
+Synthesizing Unit <InstManager>.
+    Related source file is "E:\CPU\RTL\PANZER16\InstManager.vhd".
+    Found 3-bit register for signal <CurrentState>.
+    Found finite state machine <FSM_0> for signal <CurrentState>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 27                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 8                                              |
+    | Clock              | Clk (rising_edge)                              |
+    | Reset              | RST (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <InstManager> synthesized.
+
+Synthesizing Unit <Incrementer>.
+    Related source file is "E:\CPU\RTL\PANZER16\Incrementer.vhd".
+    Found 16-bit register for signal <dout>.
+    Found 16-bit adder for signal <DataIn[15]_GND_116_o_add_1_OUT> created at line 1241.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+Unit <Incrementer> synthesized.
+
+Synthesizing Unit <Register_4Slot_Fifo>.
+    Related source file is "E:\CPU\RTL\PANZER16\Register_4Slot_Fifo.vhd".
+    Found 4-bit register for signal <RegSelect>.
+    Found 3-bit register for signal <DataCounter>.
+    Found 3-bit register for signal <MuxSelect>.
+    Found 3-bit adder for signal <DataCounter[2]_GND_117_o_add_8_OUT> created at line 1241.
+    Found 3-bit subtractor for signal <GND_117_o_GND_117_o_sub_4_OUT<2:0>> created at line 1308.
+    Found 8x4-bit Read Only RAM for signal <DataCounter[2]_GND_117_o_wide_mux_5_OUT>
+    Found 3-bit comparator lessequal for signal <DataCounter[2]_PWR_37_o_LessThan_8_o> created at line 107
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  10 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   4 Multiplexer(s).
+Unit <Register_4Slot_Fifo> synthesized.
+
+Synthesizing Unit <MemoryOutManager>.
+    Related source file is "E:\CPU\RTL\PANZER16\MemoryOutManager.vhd".
+INFO:Xst:3210 - "E:\CPU\RTL\PANZER16\MemoryOutManager.vhd" line 88: Output port <Full> of the instance <InternalFifo> is unconnected or connected to loadless signal.
+    Found 3-bit register for signal <CurrentState>.
+    Found finite state machine <FSM_1> for signal <CurrentState>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 15                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 8                                              |
+    | Clock              | Clk (rising_edge)                              |
+    | Reset              | Rst (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <MemoryOutManager> synthesized.
+
+Synthesizing Unit <ControlUnit>.
+    Related source file is "E:\CPU\RTL\PANZER16\ControlUnit.vhd".
+WARNING:Xst:647 - Input <ALUDone> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <AdressBus> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <ALUInSelect> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <ALUOutSelect> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <StoreORLoad>.
+    Found 1-bit register for signal <DequeuSignal>.
+    Found 1-bit register for signal <InstructionBufferSwitch>.
+    Found 1-bit register for signal <ALUEnableWrite>.
+    Found 1-bit register for signal <RegisterBankEnableWrite>.
+    Found 1-bit register for signal <hasConstant>.
+    Found 1-bit register for signal <SelectStateR>.
+    Found 1-bit register for signal <CachEnableWrite>.
+    Found 1-bit register for signal <ALUBuffer1Select>.
+    Found 1-bit register for signal <busystart>.
+    Found 1-bit register for signal <CachSetInstAdressSignal>.
+    Found 1-bit register for signal <CachSetInstEnable>.
+    Found 1-bit register for signal <ALUBuffer2Select>.
+    Found 1-bit register for signal <ConstantOut>.
+    Found 1-bit register for signal <SelInstRegisters>.
+    Found 1-bit register for signal <DequeuTimer>.
+    Found 2-bit register for signal <CurrentInstType>.
+    Found 2-bit register for signal <instCurrentType>.
+    Found 2-bit register for signal <SetUpPass>.
+    Found 2-bit register for signal <RegisterBankSelectM>.
+    Found 3-bit register for signal <CPUState>.
+    Found 2-bit register for signal <CachSelect>.
+    Found 1-bit register for signal <CachSetDataAdress>.
+    Found 1-bit register for signal <WillUpdate>.
+    Found 1-bit register for signal <CachEnqueueData>.
+    Found 1-bit register for signal <CachDequeueData>.
+    Found 1-bit register for signal <RegisterBankEnable>.
+    Found finite state machine <FSM_2> for signal <SetUpPass>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 20                                             |
+    | Inputs             | 7                                              |
+    | Outputs            | 4                                              |
+    | Clock              | Clk (rising_edge)                              |
+    | Reset              | RST (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_3> for signal <CPUState>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 18                                             |
+    | Inputs             | 13                                             |
+    | Outputs            | 14                                             |
+    | Clock              | Clk (rising_edge)                              |
+    | Reset              | RST (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | startfetch                                     |
+    | Power Up State     | startfetch                                     |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred  29 D-type flip-flop(s).
+	inferred  26 Multiplexer(s).
+	inferred   2 Finite State Machine(s).
+Unit <ControlUnit> synthesized.
+
+Synthesizing Unit <Register_2Bit>.
+    Related source file is "E:\CPU\RTL\PANZER16\Register_2Bit.vhd".
+    Found 2-bit register for signal <dout>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <Register_2Bit> synthesized.
+
+Synthesizing Unit <Mux3_3>.
+    Related source file is "E:\CPU\RTL\PANZER16\Mux3_3.vhd".
+    Found 1-bit 3-to-1 multiplexer for signal <OutPut[2]_Input1[2]_MUX_400_o> created at line 43.
+    Found 1-bit 3-to-1 multiplexer for signal <OutPut[2]_Input1[1]_MUX_403_o> created at line 43.
+    Found 1-bit 3-to-1 multiplexer for signal <OutPut[2]_Input1[0]_MUX_406_o> created at line 43.
+WARNING:Xst:737 - Found 1-bit latch for signal <OutPut<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <OutPut<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <OutPut<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   3 Latch(s).
+	inferred   3 Multiplexer(s).
+Unit <Mux3_3> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 8x4-bit single-port Read Only RAM                     : 3
+# Multipliers                                          : 1
+ 16x16-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 9
+ 16-bit adder                                          : 3
+ 17-bit adder                                          : 2
+ 17-bit subtractor                                     : 1
+ 3-bit addsub                                          : 3
+# Registers                                            : 65
+ 1-bit register                                        : 21
+ 16-bit register                                       : 30
+ 2-bit register                                        : 5
+ 3-bit register                                        : 6
+ 4-bit register                                        : 3
+# Latches                                              : 3
+ 1-bit latch                                           : 3
+# Comparators                                          : 5
+ 16-bit comparator equal                               : 1
+ 16-bit comparator greater                             : 1
+ 3-bit comparator lessequal                            : 3
+# Multiplexers                                         : 72
+ 1-bit 2-to-1 multiplexer                              : 30
+ 1-bit 3-to-1 multiplexer                              : 3
+ 16-bit 2-to-1 multiplexer                             : 15
+ 16-bit 4-to-1 multiplexer                             : 2
+ 16-bit 8-to-1 multiplexer                             : 1
+ 17-bit 2-to-1 multiplexer                             : 2
+ 2-bit 2-to-1 multiplexer                              : 7
+ 3-bit 2-to-1 multiplexer                              : 6
+ 4-bit 2-to-1 multiplexer                              : 6
+# Tristates                                            : 128
+ 1-bit tristate buffer                                 : 128
+# FSMs                                                 : 5
+# Xors                                                 : 2
+ 1-bit xor2                                            : 1
+ 16-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <CachSelect_0> in Unit <CU> is equivalent to the following FF/Latch, which will be removed : <CachSelect_1> 
+WARNING:Xst:2677 - Node <dout_4> of sequential type is unconnected in block <InstructionRegister1>.
+WARNING:Xst:2677 - Node <dout_5> of sequential type is unconnected in block <InstructionRegister1>.
+WARNING:Xst:2677 - Node <dout_6> of sequential type is unconnected in block <InstructionRegister1>.
+
+Synthesizing (advanced) Unit <Register_4Slot_Fifo>.
+The following registers are absorbed into counter <DataCounter>: 1 register on signal <DataCounter>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_DataCounter[2]_GND_117_o_wide_mux_5_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <DataCounter>   |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <Register_4Slot_Fifo> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 8x4-bit single-port distributed Read Only RAM         : 3
+# Multipliers                                          : 1
+ 16x16-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 6
+ 16-bit adder                                          : 3
+ 17-bit adder                                          : 2
+ 17-bit subtractor                                     : 1
+# Counters                                             : 3
+ 3-bit updown counter                                  : 3
+# Registers                                            : 532
+ Flip-Flops                                            : 532
+# Comparators                                          : 5
+ 16-bit comparator equal                               : 1
+ 16-bit comparator greater                             : 1
+ 3-bit comparator lessequal                            : 3
+# Multiplexers                                         : 71
+ 1-bit 2-to-1 multiplexer                              : 29
+ 1-bit 3-to-1 multiplexer                              : 3
+ 16-bit 2-to-1 multiplexer                             : 15
+ 16-bit 4-to-1 multiplexer                             : 2
+ 16-bit 8-to-1 multiplexer                             : 1
+ 17-bit 2-to-1 multiplexer                             : 2
+ 2-bit 2-to-1 multiplexer                              : 7
+ 3-bit 2-to-1 multiplexer                              : 6
+ 4-bit 2-to-1 multiplexer                              : 6
+# FSMs                                                 : 5
+# Xors                                                 : 2
+ 1-bit xor2                                            : 1
+ 16-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <CachSelect_0> in Unit <ControlUnit> is equivalent to the following FF/Latch, which will be removed : <CachSelect_1> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <CachUnit/FSM_0> on signal <CurrentState[1:6]> with one-hot encoding.
+Optimizing FSM <CachUnit/FSM_0> on signal <CurrentState[1:6]> with one-hot encoding.
+------------------------
+ State      | Encoding
+------------------------
+ idle       | 000001
+ fetching   | 000010
+ waiting    | 010000
+ enqueueing | 100000
+ dequeueing | 000100
+ setting    | 001000
+------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <CachUnit/FSM_1> on signal <CurrentState[1:6]> with one-hot encoding.
+------------------------
+ State      | Encoding
+------------------------
+ idle       | 000001
+ fetching   | 100000
+ waiting    | 001000
+ enqueueing | 000010
+ dequeueing | 010000
+ setting    | 000100
+------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <CU/FSM_3> on signal <CPUState[1:3]> with user encoding.
+------------------------
+ State      | Encoding
+------------------------
+ startfetch | 000
+ fetch      | 001
+ setupdata  | 010
+ execute    | 011
+ cleanup    | 100
+------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <CU/FSM_2> on signal <SetUpPass[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 11    | 11
+-------------------
+WARNING:Xst:2042 - Unit BusJoiner: 32 internal tristates are replaced by logic (pull-up yes): DataOut<0>, DataOut<10>, DataOut<11>, DataOut<12>, DataOut<13>, DataOut<14>, DataOut<15>, DataOut<1>, DataOut<2>, DataOut<3>, DataOut<4>, DataOut<5>, DataOut<6>, DataOut<7>, DataOut<8>, DataOut<9>, MainBus<0>, MainBus<10>, MainBus<11>, MainBus<12>, MainBus<13>, MainBus<14>, MainBus<15>, MainBus<1>, MainBus<2>, MainBus<3>, MainBus<4>, MainBus<5>, MainBus<6>, MainBus<7>, MainBus<8>, MainBus<9>.
+
+Optimizing unit <Register_16Bit> ...
+
+Optimizing unit <MainCPU> ...
+
+Optimizing unit <Cache> ...
+
+Optimizing unit <Register_4Slot_Fifo> ...
+
+Optimizing unit <RegisterBank> ...
+
+Optimizing unit <ControlUnit> ...
+
+Optimizing unit <ALU> ...
+WARNING:Xst:2677 - Node <CU/InstructionRegister1/dout_4> of sequential type is unconnected in block <MainCPU>.
+WARNING:Xst:2677 - Node <CU/InstructionRegister1/dout_5> of sequential type is unconnected in block <MainCPU>.
+WARNING:Xst:2677 - Node <CU/InstructionRegister1/dout_6> of sequential type is unconnected in block <MainCPU>.
+WARNING:Xst:1710 - FF/Latch <CU/WillUpdate> (without init value) has a constant value of 0 in block <MainCPU>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <CU/CurrentInstType_0> in Unit <MainCPU> is equivalent to the following FF/Latch, which will be removed : <CU/instCurrentType_0> 
+INFO:Xst:2261 - The FF/Latch <CU/CurrentInstType_1> in Unit <MainCPU> is equivalent to the following FF/Latch, which will be removed : <CU/instCurrentType_1> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block MainCPU, actual ratio is 10.
+FlipFlop CU/InstructionRegister1/dout_0 has been replicated 1 time(s)
+FlipFlop CU/InstructionRegister1/dout_1 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 559
+ Flip-Flops                                            : 559
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : MainCPU.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 954
+#      GND                         : 1
+#      INV                         : 6
+#      LUT1                        : 45
+#      LUT2                        : 89
+#      LUT3                        : 130
+#      LUT4                        : 66
+#      LUT5                        : 85
+#      LUT6                        : 304
+#      MUXCY                       : 91
+#      MUXF7                       : 55
+#      VCC                         : 1
+#      XORCY                       : 81
+# FlipFlops/Latches                : 562
+#      FD                          : 5
+#      FDC                         : 48
+#      FDCE                        : 446
+#      FDE                         : 48
+#      FDP                         : 3
+#      FDRE                        : 9
+#      LD                          : 3
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 86
+#      IBUF                        : 35
+#      OBUF                        : 51
+# DSPs                             : 1
+#      DSP48A1                     : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             562  out of  18224     3%  
+ Number of Slice LUTs:                  725  out of   9112     7%  
+    Number used as Logic:               725  out of   9112     7%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    892
+   Number with an unused Flip Flop:     330  out of    892    36%  
+   Number with an unused LUT:           167  out of    892    18%  
+   Number of fully used LUT-FF pairs:   395  out of    892    44%  
+   Number of unique control sets:        45
+
+IO Utilization: 
+ Number of IOs:                          87
+ Number of bonded IOBs:                  87  out of    232    37%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+ Number of DSP48A1s:                      1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------------------------------------------------------------------------+-------------------------------------------+-------+
+Clock Signal                                                                                                   | Clock buffer(FF name)                     | Load  |
+---------------------------------------------------------------------------------------------------------------+-------------------------------------------+-------+
+Clk                                                                                                            | BUFGP                                     | 559   |
+CU/RegisterBankSelectMux/GND_121_o_GND_121_o_OR_269_o(CU/RegisterBankSelectMux/GND_121_o_GND_121_o_OR_269_o1:O)| NONE(*)(CU/RegisterBankSelectMux/OutPut_0)| 3     |
+---------------------------------------------------------------------------------------------------------------+-------------------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 6.221ns (Maximum Frequency: 160.746MHz)
+   Minimum input arrival time before clock: 5.614ns
+   Maximum output required time after clock: 5.203ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk'
+  Clock period: 6.221ns (frequency: 160.746MHz)
+  Total number of paths / destination ports: 49884 / 1252
+-------------------------------------------------------------------------
+Delay:               6.221ns (Levels of Logic = 3)
+  Source:            ALUInBuffer1/dout_15 (FF)
+  Destination:       CachUnit/DataOutBuffer/InternalFifo/R1/dout_15 (FF)
+  Source Clock:      Clk rising
+  Destination Clock: Clk rising
+
+  Data Path: ALUInBuffer1/dout_15 to CachUnit/DataOutBuffer/InternalFifo/R1/dout_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            13   0.447   0.932  ALUInBuffer1/dout_15 (ALUInBuffer1/dout_15)
+     DSP48A1:B15->M15      8   3.364   1.031  ALUnit/Multi/Mmult_Output (ALUnit/MultiOut<15>)
+     LUT6:I3->O            1   0.205   0.000  RegisterBankDataIn<15>LogicTrst1_G (N455)
+     MUXF7:I1->O           8   0.140   0.000  RegisterBankDataIn<15>LogicTrst1 (RegisterBankDataIn<15>)
+     FDCE:D                    0.102          RegBank/gen_label[7].R/dout_15
+    ----------------------------------------
+    Total                      6.221ns (4.258ns logic, 1.963ns route)
+                                       (68.4% logic, 31.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
+  Total number of paths / destination ports: 654 / 654
+-------------------------------------------------------------------------
+Offset:              5.614ns (Levels of Logic = 2)
+  Source:            RST (PAD)
+  Destination:       CachUnit/DataOutBuffer/InternalFifo/DataCounter_2 (FF)
+  Destination Clock: Clk rising
+
+  Data Path: RST to CachUnit/DataOutBuffer/InternalFifo/DataCounter_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           298   1.222   2.071  RST_IBUF (RST_IBUF)
+     LUT2:I1->O           71   0.205   1.686  CachUnit/DataOutBuffer/FifoRST1 (CachUnit/DataOutBuffer/FifoRST)
+     FDC:CLR                   0.430          CachUnit/DataOutBuffer/InternalFifo/RegSelect_0
+    ----------------------------------------
+    Total                      5.614ns (1.857ns logic, 3.757ns route)
+                                       (33.1% logic, 66.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
+  Total number of paths / destination ports: 88 / 51
+-------------------------------------------------------------------------
+Offset:              5.203ns (Levels of Logic = 2)
+  Source:            CU/CachSelect_0 (FF)
+  Destination:       DPAdressBus<15> (PAD)
+  Source Clock:      Clk rising
+
+  Data Path: CU/CachSelect_0 to DPAdressBus<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              24   0.447   1.401  CU/CachSelect_0 (CU/CachSelect_0)
+     LUT3:I0->O            1   0.205   0.579  CachUnit/Mux/Mmux_Output17 (DPAdressBus_0_OBUF)
+     OBUF:I->O                 2.571          DPAdressBus_0_OBUF (DPAdressBus<0>)
+    ----------------------------------------
+    Total                      5.203ns (3.223ns logic, 1.980ns route)
+                                       (61.9% logic, 38.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CU/RegisterBankSelectMux/GND_121_o_GND_121_o_OR_269_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk            |         |         |    1.715|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Clk
+-----------------------------------------------------+---------+---------+---------+---------+
+                                                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------------------------------+---------+---------+---------+---------+
+CU/RegisterBankSelectMux/GND_121_o_GND_121_o_OR_269_o|         |    5.059|         |         |
+Clk                                                  |    6.221|         |         |         |
+-----------------------------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.88 secs
+ 
+--> 
+
+Total memory usage is 4518420 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   17 (   0 filtered)
+Number of infos    :   12 (   0 filtered)
+

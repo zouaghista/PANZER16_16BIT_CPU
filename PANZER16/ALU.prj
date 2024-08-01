@@ -1,0 +1,7 @@
+vhdl work "Mux16_4.vhd"
+vhdl work "Mux16-2.vhd"
+vhdl work "Multiplier.vhd"
+vhdl work "LogicAlgebraModule.vhd"
+vhdl work "ComparisonUnit.vhd"
+vhdl work "Adder.vhd"
+vhdl work "ALU.vhd"

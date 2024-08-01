@@ -1,0 +1,4 @@
+vhdl work "Register_16Bit.vhd"
+vhdl work "Mux16_8.vhd"
+vhdl work "DeMux1_8.vhd"
+vhdl work "RegisterBank.vhd"

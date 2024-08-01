@@ -1,0 +1,333 @@
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: AdderSubtractor.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "AdderSubtractor.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "AdderSubtractor"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : AdderSubtractor
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "E:\CPU\RTL\PANZER16\Adder.vhd" into library work
+Parsing entity <AdderSubtractor>.
+Parsing architecture <Behavioral> of entity <addersubtractor>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <AdderSubtractor> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <AdderSubtractor>.
+    Related source file is "E:\CPU\RTL\PANZER16\Adder.vhd".
+    Found 16-bit adder for signal <n0032> created at line 43.
+    Found 16-bit adder for signal <Input1[15]_GND_4_o_add_2_OUT> created at line 1241.
+    Found 16-bit subtractor for signal <GND_4_o_GND_4_o_sub_1_OUT<15:0>> created at line 44.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred   2 Multiplexer(s).
+Unit <AdderSubtractor> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 16-bit adder                                          : 2
+ 16-bit subtractor                                     : 1
+# Multiplexers                                         : 2
+ 16-bit 2-to-1 multiplexer                             : 2
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 16-bit adder                                          : 2
+ 16-bit subtractor                                     : 1
+# Multiplexers                                         : 2
+ 16-bit 2-to-1 multiplexer                             : 2
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <AdderSubtractor> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block AdderSubtractor, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : AdderSubtractor.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 160
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 15
+#      LUT2                        : 32
+#      LUT4                        : 1
+#      LUT5                        : 16
+#      MUXCY                       : 45
+#      VCC                         : 1
+#      XORCY                       : 48
+# IO Buffers                       : 51
+#      IBUF                        : 34
+#      OBUF                        : 17
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                   65  out of   9112     0%  
+    Number used as Logic:                65  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     65
+   Number with an unused Flip Flop:      65  out of     65   100%  
+   Number with an unused LUT:             0  out of     65     0%  
+   Number of fully used LUT-FF pairs:     0  out of     65     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                          51
+ Number of bonded IOBs:                  51  out of    232    21%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 9.132ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 3619 / 17
+-------------------------------------------------------------------------
+Delay:               9.132ns (Levels of Logic = 23)
+  Source:            Input1<0> (PAD)
+  Destination:       CarryOut (PAD)
+
+  Data Path: Input1<0> to CarryOut
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.721  Input1_0_IBUF (Input1_0_IBUF)
+     LUT2:I0->O            1   0.203   0.000  Madd_n0032_lut<0> (Madd_n0032_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Madd_n0032_cy<0> (Madd_n0032_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_n0032_cy<1> (Madd_n0032_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_n0032_cy<2> (Madd_n0032_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_n0032_cy<3> (Madd_n0032_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_n0032_cy<4> (Madd_n0032_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_n0032_cy<5> (Madd_n0032_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_n0032_cy<6> (Madd_n0032_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_n0032_cy<7> (Madd_n0032_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_n0032_cy<8> (Madd_n0032_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_n0032_cy<9> (Madd_n0032_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_n0032_cy<10> (Madd_n0032_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_n0032_cy<11> (Madd_n0032_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_n0032_cy<12> (Madd_n0032_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_n0032_cy<13> (Madd_n0032_cy<13>)
+     XORCY:CI->O           2   0.180   0.617  Madd_n0032_xor<14> (n0032<14>)
+     LUT1:I0->O            1   0.205   0.000  Madd_Input1[15]_GND_4_o_add_2_OUT_cy<14>_rt (Madd_Input1[15]_GND_4_o_add_2_OUT_cy<14>_rt)
+     MUXCY:S->O            0   0.172   0.000  Madd_Input1[15]_GND_4_o_add_2_OUT_cy<14> (Madd_Input1[15]_GND_4_o_add_2_OUT_cy<14>)
+     XORCY:CI->O           1   0.180   0.808  Madd_Input1[15]_GND_4_o_add_2_OUT_xor<15> (Input1[15]_GND_4_o_add_2_OUT<15>)
+     LUT5:I2->O            2   0.205   0.845  Mmux_OutPut71 (OutPut_15_OBUF)
+     LUT4:I1->O            1   0.205   0.579  CarryOut1 (CarryOut_OBUF)
+     OBUF:I->O                 2.571          CarryOut_OBUF (CarryOut)
+    ----------------------------------------
+    Total                      9.132ns (5.562ns logic, 3.570ns route)
+                                       (60.9% logic, 39.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.27 secs
+ 
+--> 
+
+Total memory usage is 4484892 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

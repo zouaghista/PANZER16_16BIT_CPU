@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="E:/CPU/RTL/PANZER16/CPUTestbench_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="CPUTestbench" />
+            <top_module name="glbl" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="17" />
+   <wvobject fp_name="/CPUTestbench/IPReady" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">IPReady</obj_property>
+      <obj_property name="ObjectShortName">IPReady</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPUTestbench/DPReady" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">DPReady</obj_property>
+      <obj_property name="ObjectShortName">DPReady</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPUTestbench/DPReadBus" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DPReadBus[15:0]</obj_property>
+      <obj_property name="ObjectShortName">DPReadBus[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPUTestbench/IPReadBus" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">IPReadBus[15:0]</obj_property>
+      <obj_property name="ObjectShortName">IPReadBus[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPUTestbench/IPTrans" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">IPTrans</obj_property>
+      <obj_property name="ObjectShortName">IPTrans</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPUTestbench/DPTrans" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">DPTrans</obj_property>
+      <obj_property name="ObjectShortName">DPTrans</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPUTestbench/DPReadWrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">DPReadWrite</obj_property>
+      <obj_property name="ObjectShortName">DPReadWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPUTestbench/IPAdressBus" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">IPAdressBus[15:0]</obj_property>
+      <obj_property name="ObjectShortName">IPAdressBus[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPUTestbench/DPAdressBus" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DPAdressBus[15:0]</obj_property>
+      <obj_property name="ObjectShortName">DPAdressBus[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPUTestbench/DPWriteBus" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DPWriteBus[15:0]</obj_property>
+      <obj_property name="ObjectShortName">DPWriteBus[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPUTestbench/DataSize" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DataSize[1:0]</obj_property>
+      <obj_property name="ObjectShortName">DataSize[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPUTestbench/Clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Clk</obj_property>
+      <obj_property name="ObjectShortName">Clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPUTestbench/RST" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RST</obj_property>
+      <obj_property name="ObjectShortName">RST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPUTestbench/uut/CU/cpustate" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">cpustate</obj_property>
+      <obj_property name="ObjectShortName">cpustate</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPUTestbench/uut/CU/instruction1buffer" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">instruction1buffer[15:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction1buffer[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPUTestbench/uut/CU/instruction2buffer" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">instruction2buffer[15:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction2buffer[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPUTestbench/uut/RegBank/registeroutputs" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">registeroutputs[7:0]</obj_property>
+      <obj_property name="ObjectShortName">registeroutputs[7:0]</obj_property>
+      <wvobject fp_name="/CPUTestbench/uut/RegBank/registeroutputs[7]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">registeroutputs[7]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CPUTestbench/uut/RegBank/registeroutputs[6]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">registeroutputs[6]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CPUTestbench/uut/RegBank/registeroutputs[5]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">registeroutputs[5]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CPUTestbench/uut/RegBank/registeroutputs[4]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">registeroutputs[4]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CPUTestbench/uut/RegBank/registeroutputs[3]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">registeroutputs[3]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CPUTestbench/uut/RegBank/registeroutputs[2]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">registeroutputs[2]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CPUTestbench/uut/RegBank/registeroutputs[1]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">registeroutputs[1]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CPUTestbench/uut/RegBank/registeroutputs[0]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">registeroutputs[0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

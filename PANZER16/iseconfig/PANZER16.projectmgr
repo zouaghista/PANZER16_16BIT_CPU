@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="PANZER16" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Cache - Behavioral E:|CPU|RTL|PANZER16|Cache.vhd/DataInBuffer - InstManager - Behavioral/InternalFifo - Register_4Slot_Fifo - RegisterFifoArch</ClosedNode>
+         <ClosedNode>/Cache - Behavioral E:|CPU|RTL|PANZER16|Cache.vhd/DataOutBuffer - MemoryOutManager - Behavioral</ClosedNode>
+         <ClosedNode>/Cache - Behavioral E:|CPU|RTL|PANZER16|Cache.vhd/InstructionBuffer - InstManager - Behavioral/InternalFifo - Register_4Slot_Fifo - RegisterFifoArch</ClosedNode>
+         <ClosedNode>/Cache - ChacheArchitecture E:|CPU|RTL|PANZER16|Cache.vhd</ClosedNode>
+         <ClosedNode>/Cache - ChacheArchitecture E:|CPU|RTL|PANZER16|Cache.vhd/DataOutFifo - Register_4Slot_Fifo - RegisterFifoArch</ClosedNode>
+         <ClosedNode>/Cache - ChacheArchitecture E:|CPU|RTL|PANZER16|Cache.vhd/InstInFifo - Register_4Slot_Fifo - RegisterFifoArch</ClosedNode>
+         <ClosedNode>/ControlUnit - Behavioral E:|CPU|RTL|PANZER16|ControlUnit.vhd</ClosedNode>
+         <ClosedNode>/InstManager - Behavioral E:|CPU|RTL|PANZER16|InstManager.vhd</ClosedNode>
+         <ClosedNode>/InstManagerV2 - Behavioral E:|CPU|RTL|PANZER16|InstManagerV2.vhd</ClosedNode>
+         <ClosedNode>/MainCPU - Behavioral E:|CPU|RTL|PANZER16|MainCPU.vhd/ALUnit - ALU - Behavioral</ClosedNode>
+         <ClosedNode>/MainCPU - Behavioral E:|CPU|RTL|PANZER16|MainCPU.vhd/CU - ControlUnit - Behavioral</ClosedNode>
+         <ClosedNode>/MainCPU - Behavioral E:|CPU|RTL|PANZER16|MainCPU.vhd/CachUnit - Cache - Behavioral</ClosedNode>
+         <ClosedNode>/MainCPU - Behavioral E:|CPU|RTL|PANZER16|MainCPU.vhd/CachUnit - Cache - Behavioral/DataInBuffer - InstManager - Behavioral</ClosedNode>
+         <ClosedNode>/MainCPU - Behavioral E:|CPU|RTL|PANZER16|MainCPU.vhd/CachUnit - Cache - Behavioral/DataOutBuffer - MemoryOutManager - Behavioral</ClosedNode>
+         <ClosedNode>/MainCPU - Behavioral E:|CPU|RTL|PANZER16|MainCPU.vhd/CachUnit - Cache - Behavioral/InstructionBuffer - InstManager - Behavioral</ClosedNode>
+         <ClosedNode>/MainCPU - Behavioral E:|CPU|RTL|PANZER16|MainCPU.vhd/CachUnit - Cache - Behavioral/InstructionBuffer - InstManager - Behavioral/InternalFifo - Register_4Slot_Fifo - RegisterFifoArch</ClosedNode>
+         <ClosedNode>/MainCPU - Behavioral E:|CPU|RTL|PANZER16|MainCPU.vhd/RegBank - RegisterBank - Behavioral</ClosedNode>
+         <ClosedNode>/MemoryOutManager - Behavioral E:|CPU|RTL|PANZER16|MemoryOutManager.vhd</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>InstManagerV2 - Behavioral (E:/CPU/RTL/PANZER16/InstManagerV2.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001ab000000020000000000000000000000000200000064ffffffff000000810000000300000002000001ab0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>InstManagerV2 - Behavioral (E:/CPU/RTL/PANZER16/InstManagerV2.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000175000000010000000100000000000000000000000064ffffffff000000810000000000000001000001750000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000164000000040101000100000000000000000000000064ffffffff0000008100000000000000040000003d00000001000000000000002100000001000000000000005d0000000100000000000000a90000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Cache.vhd</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000175000000010001000100000000000000000000000064ffffffff000000810000000000000001000001750000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Synthesize - XST</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000164000000010000000100000000000000000000000064ffffffff000000810000000000000001000001640000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Synthesize - XST</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff00000000000000020000015d000000e501000000050100000002</SourceProcessView>
+   <CurrentView>Behavioral Simulation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000175000000010000000100000000000000000000000064ffffffff000000810000000000000001000001750000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/ALUTestbench E:|CPU|RTL|PANZER16|ALUTestbench.v</ClosedNode>
+         <ClosedNode>/CPUTestbench E:|CPU|RTL|PANZER16|CPUTestbench.v</ClosedNode>
+         <ClosedNode>/CPUTestbench E:|CPU|RTL|PANZER16|CPUTestbench.v/uut - MainCPU - Behavioral</ClosedNode>
+         <ClosedNode>/CPUTestbench E:|CPU|RTL|PANZER16|CPUTestbench.v/uut - MainCPU - Behavioral/ALUnit - ALU - Behavioral</ClosedNode>
+         <ClosedNode>/CPUTestbench E:|CPU|RTL|PANZER16|CPUTestbench.v/uut - MainCPU - Behavioral/CU - ControlUnit - Behavioral</ClosedNode>
+         <ClosedNode>/CPUTestbench E:|CPU|RTL|PANZER16|CPUTestbench.v/uut - MainCPU - Behavioral/CachUnit - Cache - Behavioral</ClosedNode>
+         <ClosedNode>/CPUTestbench E:|CPU|RTL|PANZER16|CPUTestbench.v/uut - MainCPU - Behavioral/CachUnit - Cache - Behavioral/DataInBuffer - InstManager - Behavioral</ClosedNode>
+         <ClosedNode>/CPUTestbench E:|CPU|RTL|PANZER16|CPUTestbench.v/uut - MainCPU - Behavioral/CachUnit - Cache - Behavioral/DataOutBuffer - MemoryOutManager - Behavioral</ClosedNode>
+         <ClosedNode>/CPUTestbench E:|CPU|RTL|PANZER16|CPUTestbench.v/uut - MainCPU - Behavioral/CachUnit - Cache - Behavioral/InstructionBuffer - InstManager - Behavioral</ClosedNode>
+         <ClosedNode>/CPUTestbench E:|CPU|RTL|PANZER16|CPUTestbench.v/uut - MainCPU - Behavioral/CachUnit - Cache - Behavioral/InstructionBuffer - InstManager - Behavioral/InternalFifo - Register_4Slot_Fifo - RegisterFifoArch</ClosedNode>
+         <ClosedNode>/CPUTestbench E:|CPU|RTL|PANZER16|CPUTestbench.v/uut - MainCPU - Behavioral/RegBank - RegisterBank - Behavioral</ClosedNode>
+         <ClosedNode>/Cache - ChacheArchitecture E:|CPU|RTL|PANZER16|Cache.vhd</ClosedNode>
+         <ClosedNode>/Cache - ChacheArchitecture E:|CPU|RTL|PANZER16|Cache.vhd/DataInFifo - Register_4Slot_Fifo - RegisterFifoArch</ClosedNode>
+         <ClosedNode>/Cache - ChacheArchitecture E:|CPU|RTL|PANZER16|Cache.vhd/DataOutFifo - Register_4Slot_Fifo - RegisterFifoArch</ClosedNode>
+         <ClosedNode>/Cache - ChacheArchitecture E:|CPU|RTL|PANZER16|Cache.vhd/InstInFifo - Register_4Slot_Fifo - RegisterFifoArch</ClosedNode>
+         <ClosedNode>/CacheTestbench E:|CPU|RTL|PANZER16|CacheTestbench.v</ClosedNode>
+         <ClosedNode>/InstManagerV2 - Behavioral E:|CPU|RTL|PANZER16|InstManagerV2.vhd</ClosedNode>
+         <ClosedNode>/InstManagerV2TestBench E:|CPU|RTL|PANZER16|InstManagerV2TestBench.v</ClosedNode>
+         <ClosedNode>/InstructionManagerTestBench E:|CPU|RTL|PANZER16|InstructionManagerTestBench.v</ClosedNode>
+         <ClosedNode>/MainCPU - Behavioral E:|CPU|RTL|PANZER16|MainCPU.vhd</ClosedNode>
+         <ClosedNode>/MainCPU - Behavioral E:|CPU|RTL|PANZER16|MainCPU.vhd/ALUnit - ALU - Behavioral</ClosedNode>
+         <ClosedNode>/MainCPU - Behavioral E:|CPU|RTL|PANZER16|MainCPU.vhd/CU - ControlUnit - Behavioral</ClosedNode>
+         <ClosedNode>/MainCPU - Behavioral E:|CPU|RTL|PANZER16|MainCPU.vhd/CachUnit - Cache - Behavioral</ClosedNode>
+         <ClosedNode>/MainCPU - Behavioral E:|CPU|RTL|PANZER16|MainCPU.vhd/CachUnit - Cache - Behavioral/DataInBuffer - InstManager - Behavioral</ClosedNode>
+         <ClosedNode>/MainCPU - Behavioral E:|CPU|RTL|PANZER16|MainCPU.vhd/CachUnit - Cache - Behavioral/DataOutBuffer - MemoryOutManager - Behavioral</ClosedNode>
+         <ClosedNode>/MainCPU - Behavioral E:|CPU|RTL|PANZER16|MainCPU.vhd/CachUnit - Cache - Behavioral/InstructionBuffer - InstManager - Behavioral</ClosedNode>
+         <ClosedNode>/MainCPU - Behavioral E:|CPU|RTL|PANZER16|MainCPU.vhd/RegBank - RegisterBank - Behavioral</ClosedNode>
+         <ClosedNode>/MemoryManagerTestBench E:|CPU|RTL|PANZER16|MemoryManagerTestBench.v</ClosedNode>
+         <ClosedNode>/ShiftRegisterTest E:|CPU|RTL|PANZER16|ShiftRegisterTest.v</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>InstManagerV2TestBench (E:/CPU/RTL/PANZER16/InstManagerV2TestBench.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000192000000020000000000000000000000000200000064ffffffff000000810000000300000002000001920000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>InstManagerV2TestBench (E:/CPU/RTL/PANZER16/InstManagerV2TestBench.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000175000000010000000100000000000000000000000064ffffffff000000810000000000000001000001750000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000175000000010000000100000000000000000000000064ffffffff000000810000000000000001000001750000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000175000000010000000100000000000000000000000064ffffffff000000810000000000000001000001750000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000175000000010000000100000000000000000000000064ffffffff000000810000000000000001000001750000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+</Project>

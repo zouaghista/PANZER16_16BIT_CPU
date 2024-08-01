@@ -1,0 +1,42 @@
+Running: E:\xiling\14.4\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o E:/CPU/RTL/PANZER16/InstManagerV2TestBench_isim_beh.exe -prj E:/CPU/RTL/PANZER16/InstManagerV2TestBench_beh.prj work.InstManagerV2TestBench work.glbl 
+ISim P.49d (signature 0x7708f090)
+Number of CPUs detected in this system: 16
+Turning on mult-threading, number of parallel sub-compilation jobs: 32 
+Determining compilation order of HDL files
+Analyzing Verilog file "E:/CPU/RTL/PANZER16/AHBReadTestModule.v" into library work
+Analyzing Verilog file "E:/CPU/RTL/PANZER16/InstManagerV2TestBench.v" into library work
+Analyzing Verilog file "E:/xiling/14.4/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Parsing VHDL file "E:/CPU/RTL/PANZER16/Register_2Bit.vhd" into library work
+Parsing VHDL file "E:/CPU/RTL/PANZER16/Register_16Bit.vhd" into library work
+Parsing VHDL file "E:/CPU/RTL/PANZER16/Mux16_4.vhd" into library work
+Parsing VHDL file "E:/CPU/RTL/PANZER16/Mux16-2.vhd" into library work
+Parsing VHDL file "E:/CPU/RTL/PANZER16/Incrementer2Bit_WithCarry.vhd" into library work
+Parsing VHDL file "E:/CPU/RTL/PANZER16/Incrementer.vhd" into library work
+Parsing VHDL file "E:/CPU/RTL/PANZER16/Comparer2Bit.vhd" into library work
+Parsing VHDL file "E:/CPU/RTL/PANZER16/InstManagerV2.vhd" into library work
+Starting static elaboration
+WARNING:HDLCompiler:89 - "E:/CPU/RTL/PANZER16/InstManagerV2.vhd" Line 122: <demux1_4> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:329 - "E:/CPU/RTL/PANZER16/InstManagerV2TestBench.v" Line 68: Target <PDataIn> of concurrent assignment or output port connection should be a net type.
+WARNING:HDLCompiler:329 - "E:/CPU/RTL/PANZER16/InstManagerV2TestBench.v" Line 69: Target <PReady> of concurrent assignment or output port connection should be a net type.
+Completed static elaboration
+WARNING:Simulator:648 - "E:/CPU/RTL/PANZER16/InstManagerV2.vhd" Line 122. Instance demux1_4 is unbound
+Compiling module AHBTestModule
+Compiling module InstManagerV2TestBench
+Compiling module glbl
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture registerarch of entity Register_16Bit [register_16bit_default]
+Compiling architecture behavioral of entity Mux16_4 [mux16_4_default]
+Compiling architecture behavioral of entity Incrementer [incrementer_default]
+Compiling architecture muxarch of entity Mux16_2 [mux16_2_default]
+Compiling architecture behavioral of entity Register_2Bit [register_2bit_default]
+Compiling architecture behavioral of entity Incrementer2Bit_WithCarry [incrementer2bit_withcarry_defaul...]
+Compiling architecture behavioral of entity Comparer2Bit [comparer2bit_default]
+Compiling architecture behavioral of entity InstManagerV2 [instmanagerv2_default]
+Time Resolution for simulation is 1ps.
+Compiled 19 VHDL Units
+Compiled 3 Verilog Units
+Built simulation executable E:/CPU/RTL/PANZER16/InstManagerV2TestBench_isim_beh.exe
+Fuse Memory Usage: 38056 KB
+Fuse CPU Usage: 452 ms

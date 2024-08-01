@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/DeMux1_8.xst" -ofn "E:/CPU/RTL/PANZER16/DeMux1_8.syr" 

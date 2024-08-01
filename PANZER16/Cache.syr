@@ -1,0 +1,597 @@
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: Cache.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Cache.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Cache"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : Cache
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "E:\CPU\RTL\PANZER16\Register_16Bit.vhd" into library work
+Parsing entity <Register_16Bit>.
+Parsing architecture <RegisterArch> of entity <register_16bit>.
+Parsing VHDL file "E:\CPU\RTL\PANZER16\Mux16-2.vhd" into library work
+Parsing entity <Mux16_2>.
+Parsing architecture <MuxArch> of entity <mux16_2>.
+Parsing VHDL file "E:\CPU\RTL\PANZER16\Register_4Slot_Fifo.vhd" into library work
+Parsing entity <Register_4Slot_Fifo>.
+Parsing architecture <RegisterFifoArch> of entity <register_4slot_fifo>.
+Parsing VHDL file "E:\CPU\RTL\PANZER16\Incrementer.vhd" into library work
+Parsing entity <Incrementer>.
+Parsing architecture <Behavioral> of entity <incrementer>.
+Parsing VHDL file "E:\CPU\RTL\PANZER16\MemoryOutManager.vhd" into library work
+Parsing entity <MemoryOutManager>.
+Parsing architecture <Behavioral> of entity <memoryoutmanager>.
+Parsing VHDL file "E:\CPU\RTL\PANZER16\InstManager.vhd" into library work
+Parsing entity <InstManager>.
+Parsing architecture <Behavioral> of entity <instmanager>.
+Parsing VHDL file "E:\CPU\RTL\PANZER16\DeMux16_2.vhd" into library work
+Parsing entity <DeMux16_2>.
+Parsing architecture <Behavioral> of entity <demux16_2>.
+Parsing VHDL file "E:\CPU\RTL\PANZER16\Cache.vhd" into library work
+Parsing entity <Cache>.
+Parsing architecture <Behavioral> of entity <cache>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Cache> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <InstManager> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Incrementer> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Mux16_2> (architecture <MuxArch>) from library <work>.
+
+Elaborating entity <Register_16Bit> (architecture <RegisterArch>) from library <work>.
+
+Elaborating entity <Register_4Slot_Fifo> (architecture <RegisterFifoArch>) from library <work>.
+INFO:HDLCompiler:679 - "E:\CPU\RTL\PANZER16\InstManager.vhd" Line 119. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "E:\CPU\RTL\PANZER16\InstManager.vhd" Line 133. Case statement is complete. others clause is never selected
+
+Elaborating entity <MemoryOutManager> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "E:\CPU\RTL\PANZER16\MemoryOutManager.vhd" Line 115. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "E:\CPU\RTL\PANZER16\MemoryOutManager.vhd" Line 129. Case statement is complete. others clause is never selected
+
+Elaborating entity <DeMux16_2> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Cache>.
+    Related source file is "E:\CPU\RTL\PANZER16\Cache.vhd".
+WARNING:Xst:647 - Input <Sel<1:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "E:\CPU\RTL\PANZER16\Cache.vhd" line 106: Output port <Empty> of the instance <DataInBuffer> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\CPU\RTL\PANZER16\Cache.vhd" line 108: Output port <Empty> of the instance <DataOutBuffer> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Cache> synthesized.
+
+Synthesizing Unit <InstManager>.
+    Related source file is "E:\CPU\RTL\PANZER16\InstManager.vhd".
+    Found 3-bit register for signal <CurrentState>.
+    Found finite state machine <FSM_0> for signal <CurrentState>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 16                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 8                                              |
+    | Clock              | Clk (rising_edge)                              |
+    | Reset              | RST (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <InstManager> synthesized.
+
+Synthesizing Unit <Incrementer>.
+    Related source file is "E:\CPU\RTL\PANZER16\Incrementer.vhd".
+    Found 16-bit register for signal <dout>.
+    Found 16-bit adder for signal <DataIn[15]_GND_6_o_add_1_OUT> created at line 1241.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+Unit <Incrementer> synthesized.
+
+Synthesizing Unit <Mux16_2>.
+    Related source file is "E:\CPU\RTL\PANZER16\Mux16-2.vhd".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Mux16_2> synthesized.
+
+Synthesizing Unit <Register_16Bit>.
+    Related source file is "E:\CPU\RTL\PANZER16\Register_16Bit.vhd".
+    Found 16-bit register for signal <dout>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <Register_16Bit> synthesized.
+
+Synthesizing Unit <Register_4Slot_Fifo>.
+    Related source file is "E:\CPU\RTL\PANZER16\Register_4Slot_Fifo.vhd".
+    Found 3-bit register for signal <DataCounter>.
+    Found 3-bit register for signal <MuxSelect>.
+    Found 4-bit register for signal <RegSelect>.
+    Found 1-bit register for signal <Empty>.
+    Found 1-bit register for signal <Full>.
+    Found 3-bit adder for signal <DataCounter[2]_GND_25_o_add_3_OUT> created at line 1241.
+    Found 3-bit subtractor for signal <GND_25_o_GND_25_o_sub_1_OUT<2:0>> created at line 1308.
+    Found 8x4-bit Read Only RAM for signal <DataCounter[2]_GND_25_o_wide_mux_1_OUT>
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  12 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <Register_4Slot_Fifo> synthesized.
+
+Synthesizing Unit <MemoryOutManager>.
+    Related source file is "E:\CPU\RTL\PANZER16\MemoryOutManager.vhd".
+INFO:Xst:3210 - "E:\CPU\RTL\PANZER16\MemoryOutManager.vhd" line 88: Output port <Full> of the instance <InternalFifo> is unconnected or connected to loadless signal.
+    Found 3-bit register for signal <CurrentState>.
+    Found finite state machine <FSM_1> for signal <CurrentState>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 8                                              |
+    | Clock              | Clk (rising_edge)                              |
+    | Reset              | Rst (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <MemoryOutManager> synthesized.
+
+Synthesizing Unit <DeMux16_2>.
+    Related source file is "E:\CPU\RTL\PANZER16\DeMux16_2.vhd".
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <DeMux16_2> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 8x4-bit single-port Read Only RAM                     : 3
+# Adders/Subtractors                                   : 6
+ 16-bit adder                                          : 3
+ 3-bit addsub                                          : 3
+# Registers                                            : 33
+ 1-bit register                                        : 6
+ 16-bit register                                       : 18
+ 3-bit register                                        : 6
+ 4-bit register                                        : 3
+# Multiplexers                                         : 21
+ 16-bit 2-to-1 multiplexer                             : 15
+ 3-bit 2-to-1 multiplexer                              : 6
+# FSMs                                                 : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Register_4Slot_Fifo>.
+The following registers are absorbed into counter <DataCounter>: 1 register on signal <DataCounter>.
+INFO:Xst:3213 - HDL ADVISOR - Characteristics of the register <RegSelect> prevent it from being combined with the RAM <Mram_DataCounter[2]_GND_25_o_wide_mux_1_OUT> for implementation as read-only block RAM.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <DataCounter>   |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <Register_4Slot_Fifo> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 8x4-bit single-port distributed Read Only RAM         : 3
+# Adders/Subtractors                                   : 3
+ 16-bit adder                                          : 3
+# Counters                                             : 3
+ 3-bit updown counter                                  : 3
+# Registers                                            : 315
+ Flip-Flops                                            : 315
+# Multiplexers                                         : 21
+ 16-bit 2-to-1 multiplexer                             : 15
+ 3-bit 2-to-1 multiplexer                              : 6
+# FSMs                                                 : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <CurrentState[1:3]> with user encoding.
+Optimizing FSM <FSM_0> on signal <CurrentState[1:3]> with user encoding.
+------------------------
+ State      | Encoding
+------------------------
+ idle       | 000
+ fetching   | 001
+ waiting    | 010
+ enqueueing | 011
+ dequeueing | 100
+ setting    | 101
+------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_1> on signal <CurrentState[1:3]> with sequential encoding.
+------------------------
+ State      | Encoding
+------------------------
+ idle       | 000
+ fetching   | 101
+ waiting    | 011
+ enqueueing | 001
+ dequeueing | 100
+ setting    | 010
+------------------------
+
+Optimizing unit <Register_16Bit> ...
+
+Optimizing unit <Cache> ...
+
+Optimizing unit <Register_4Slot_Fifo> ...
+WARNING:Xst:2677 - Node <DataOutBuffer/InternalFifo/Full> of sequential type is unconnected in block <Cache>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Cache, actual ratio is 5.
+FlipFlop DataInBuffer/CurrentState_FSM_FFd1 has been replicated 3 time(s)
+FlipFlop DataInBuffer/CurrentState_FSM_FFd2 has been replicated 1 time(s)
+FlipFlop DataInBuffer/CurrentState_FSM_FFd3 has been replicated 3 time(s)
+FlipFlop DataOutBuffer/CurrentState_FSM_FFd1 has been replicated 2 time(s)
+FlipFlop DataOutBuffer/CurrentState_FSM_FFd2 has been replicated 1 time(s)
+FlipFlop DataOutBuffer/CurrentState_FSM_FFd3 has been replicated 2 time(s)
+FlipFlop InstructionBuffer/CurrentState_FSM_FFd1 has been replicated 4 time(s)
+FlipFlop InstructionBuffer/CurrentState_FSM_FFd2 has been replicated 1 time(s)
+FlipFlop InstructionBuffer/CurrentState_FSM_FFd3 has been replicated 4 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 353
+ Flip-Flops                                            : 353
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Cache.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 509
+#      GND                         : 1
+#      INV                         : 7
+#      LUT1                        : 45
+#      LUT2                        : 7
+#      LUT3                        : 250
+#      LUT4                        : 40
+#      LUT5                        : 26
+#      LUT6                        : 34
+#      MUXCY                       : 45
+#      MUXF7                       : 5
+#      VCC                         : 1
+#      XORCY                       : 48
+# FlipFlops/Latches                : 353
+#      FD                          : 26
+#      FDC                         : 39
+#      FDCE                        : 240
+#      FDE                         : 48
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 158
+#      IBUF                        : 73
+#      OBUF                        : 85
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             353  out of  18224     1%  
+ Number of Slice LUTs:                  409  out of   9112     4%  
+    Number used as Logic:               409  out of   9112     4%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    460
+   Number with an unused Flip Flop:     107  out of    460    23%  
+   Number with an unused LUT:            51  out of    460    11%  
+   Number of fully used LUT-FF pairs:   302  out of    460    65%  
+   Number of unique control sets:        30
+
+IO Utilization: 
+ Number of IOs:                         160
+ Number of bonded IOBs:                 159  out of    232    68%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clk                                | BUFGP                  | 353   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.114ns (Maximum Frequency: 321.166MHz)
+   Minimum input arrival time before clock: 5.060ns
+   Maximum output required time after clock: 5.550ns
+   Maximum combinational path delay: 5.810ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk'
+  Clock period: 3.114ns (frequency: 321.166MHz)
+  Total number of paths / destination ports: 2281 / 794
+-------------------------------------------------------------------------
+Delay:               3.114ns (Levels of Logic = 1)
+  Source:            DataInBuffer/CurrentState_FSM_FFd3_1 (FF)
+  Destination:       DataInBuffer/InternalFifo/R1/dout_15 (FF)
+  Source Clock:      Clk rising
+  Destination Clock: Clk rising
+
+  Data Path: DataInBuffer/CurrentState_FSM_FFd3_1 to DataInBuffer/InternalFifo/R1/dout_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             17   0.447   1.028  DataInBuffer/CurrentState_FSM_FFd3_1 (DataInBuffer/CurrentState_FSM_FFd3_1)
+     LUT4:I3->O           16   0.205   1.004  DataInBuffer/FifoRST1_3 (DataInBuffer/FifoRST12)
+     FDCE:CLR                  0.430          DataInBuffer/InternalFifo/R1/dout_4
+    ----------------------------------------
+    Total                      3.114ns (1.082ns logic, 2.032ns route)
+                                       (34.8% logic, 65.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
+  Total number of paths / destination ports: 616 / 539
+-------------------------------------------------------------------------
+Offset:              5.060ns (Levels of Logic = 2)
+  Source:            Rst (PAD)
+  Destination:       DataInBuffer/InternalFifo/R4/dout_15 (FF)
+  Destination Clock: Clk rising
+
+  Data Path: Rst to DataInBuffer/InternalFifo/R4/dout_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           112   1.222   2.156  Rst_IBUF (Rst_IBUF)
+     LUT4:I0->O           18   0.203   1.049  DataInBuffer/FifoRST1 (DataInBuffer/FifoRST)
+     FDCE:CLR                  0.430          DataInBuffer/InternalFifo/R4/dout_0
+    ----------------------------------------
+    Total                      5.060ns (1.855ns logic, 3.205ns route)
+                                       (36.7% logic, 63.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
+  Total number of paths / destination ports: 115 / 85
+-------------------------------------------------------------------------
+Offset:              5.550ns (Levels of Logic = 2)
+  Source:            DataOutBuffer/CurrentState_FSM_FFd3 (FF)
+  Destination:       DTrans (PAD)
+  Source Clock:      Clk rising
+
+  Data Path: DataOutBuffer/CurrentState_FSM_FFd3 to DTrans
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             40   0.447   1.750  DataOutBuffer/CurrentState_FSM_FFd3 (DataOutBuffer/CurrentState_FSM_FFd3)
+     LUT6:I1->O            1   0.203   0.579  DTrans1 (DTrans_OBUF)
+     OBUF:I->O                 2.571          DTrans_OBUF (DTrans)
+    ----------------------------------------
+    Total                      5.550ns (3.221ns logic, 2.329ns route)
+                                       (58.0% logic, 42.0% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Delay:               5.810ns (Levels of Logic = 3)
+  Source:            Sel<0> (PAD)
+  Destination:       DataAdress<15> (PAD)
+
+  Data Path: Sel<0> to DataAdress<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.222   1.233  Sel_0_IBUF (Sel_0_IBUF)
+     LUT3:I0->O            1   0.205   0.579  Mux/Mmux_Output161 (DataAdress_9_OBUF)
+     OBUF:I->O                 2.571          DataAdress_9_OBUF (DataAdress<9>)
+    ----------------------------------------
+    Total                      5.810ns (3.998ns logic, 1.812ns route)
+                                       (68.8% logic, 31.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk            |    3.114|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.54 secs
+ 
+--> 
+
+Total memory usage is 4501084 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

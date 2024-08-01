@@ -1,0 +1,3 @@
+vhdl isim_temp "Register_16Bit.vhd"
+vhdl isim_temp "Mux16-2.vhd"
+vhdl isim_temp "Register_4Slot_Fifo.vhd"

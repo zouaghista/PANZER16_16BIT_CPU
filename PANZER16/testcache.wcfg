@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="E:/CPU/RTL/PANZER16/CacheTestbench_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="CacheTestbench" />
+            <top_module name="glbl" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="32" />
+   <wvobject fp_name="/CacheTestbench/IPReady" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">IPReady</obj_property>
+      <obj_property name="ObjectShortName">IPReady</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CacheTestbench/DPReady" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">DPReady</obj_property>
+      <obj_property name="ObjectShortName">DPReady</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CacheTestbench/IPReadBus" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">IPReadBus[15:0]</obj_property>
+      <obj_property name="ObjectShortName">IPReadBus[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CacheTestbench/DPReadBus" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DPReadBus[15:0]</obj_property>
+      <obj_property name="ObjectShortName">DPReadBus[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CacheTestbench/InstructionBus" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">InstructionBus[15:0]</obj_property>
+      <obj_property name="ObjectShortName">InstructionBus[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CacheTestbench/InstAdress" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">InstAdress[15:0]</obj_property>
+      <obj_property name="ObjectShortName">InstAdress[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CacheTestbench/DataAdress" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DataAdress[15:0]</obj_property>
+      <obj_property name="ObjectShortName">DataAdress[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CacheTestbench/DPWriteBus" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DPWriteBus[15:0]</obj_property>
+      <obj_property name="ObjectShortName">DPWriteBus[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CacheTestbench/InstructionBusy" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">InstructionBusy</obj_property>
+      <obj_property name="ObjectShortName">InstructionBusy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CacheTestbench/InstructionEmpty" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">InstructionEmpty</obj_property>
+      <obj_property name="ObjectShortName">InstructionEmpty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CacheTestbench/ITrans" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ITrans</obj_property>
+      <obj_property name="ObjectShortName">ITrans</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CacheTestbench/DTrans" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">DTrans</obj_property>
+      <obj_property name="ObjectShortName">DTrans</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CacheTestbench/DataBusy" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">DataBusy</obj_property>
+      <obj_property name="ObjectShortName">DataBusy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CacheTestbench/DataOutBus" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DataOutBus[15:0]</obj_property>
+      <obj_property name="ObjectShortName">DataOutBus[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CacheTestbench/DPReadWrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">DPReadWrite</obj_property>
+      <obj_property name="ObjectShortName">DPReadWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CacheTestbench/Clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Clk</obj_property>
+      <obj_property name="ObjectShortName">Clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CacheTestbench/Rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Rst</obj_property>
+      <obj_property name="ObjectShortName">Rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CacheTestbench/Sel" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Sel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">Sel[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CacheTestbench/AdressBus" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">AdressBus[15:0]</obj_property>
+      <obj_property name="ObjectShortName">AdressBus[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CacheTestbench/SetInstAdress" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">SetInstAdress</obj_property>
+      <obj_property name="ObjectShortName">SetInstAdress</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CacheTestbench/SetDataAdress" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">SetDataAdress</obj_property>
+      <obj_property name="ObjectShortName">SetDataAdress</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CacheTestbench/DataInBus" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DataInBus[15:0]</obj_property>
+      <obj_property name="ObjectShortName">DataInBus[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CacheTestbench/IPWRitePLACEHOLDER" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">IPWRitePLACEHOLDER[15:0]</obj_property>
+      <obj_property name="ObjectShortName">IPWRitePLACEHOLDER[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CacheTestbench/EnqueueData" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">EnqueueData</obj_property>
+      <obj_property name="ObjectShortName">EnqueueData</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CacheTestbench/DequeueData" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">DequeueData</obj_property>
+      <obj_property name="ObjectShortName">DequeueData</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CacheTestbench/DequeueInstruction" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">DequeueInstruction</obj_property>
+      <obj_property name="ObjectShortName">DequeueInstruction</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CacheTestbench/InstRead" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">InstRead</obj_property>
+      <obj_property name="ObjectShortName">InstRead</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CacheTestbench/i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">i[15:0]</obj_property>
+      <obj_property name="ObjectShortName">i[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CacheTestbench/intermid" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">intermid[16:0]</obj_property>
+      <obj_property name="ObjectShortName">intermid[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CacheTestbench/uut/DataOutBuffer/currentstate" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">currentstate</obj_property>
+      <obj_property name="ObjectShortName">currentstate</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CacheTestbench/uut/DataOutBuffer/adressout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">adressout[15:0]</obj_property>
+      <obj_property name="ObjectShortName">adressout[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CacheTestbench/uut/DataOutBuffer/Reg_Adress/reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg[15:0]</obj_property>
+      <obj_property name="ObjectShortName">reg[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

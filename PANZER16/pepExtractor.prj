@@ -1,0 +1,8 @@
+work	"Comparer2Bit.vhd"
+work	"Incrementer.vhd"
+work	"Incrementer2Bit_WithCarry.vhd"
+work	"InstManagerV2.vhd"
+work	"Mux16-2.vhd"
+work	"Mux16_4.vhd"
+work	"Register_16Bit.vhd"
+work	"Register_2Bit.vhd"

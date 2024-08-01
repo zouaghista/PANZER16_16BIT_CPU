@@ -1,0 +1,21 @@
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/InstManager.xst" -ofn "E:/CPU/RTL/PANZER16/InstManager.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/InstManager.xst" -ofn "E:/CPU/RTL/PANZER16/InstManager.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/InstManager.xst" -ofn "E:/CPU/RTL/PANZER16/InstManager.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/InstManager.xst" -ofn "E:/CPU/RTL/PANZER16/InstManager.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/InstManager.xst" -ofn "E:/CPU/RTL/PANZER16/InstManager.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/InstManager.xst" -ofn "E:/CPU/RTL/PANZER16/InstManager.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/InstManager.xst" -ofn "E:/CPU/RTL/PANZER16/InstManager.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/InstManager.xst" -ofn "E:/CPU/RTL/PANZER16/InstManager.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx16-csg324-3 InstManager.ngc InstManager.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o InstManager_map.ncd InstManager.ngd InstManager.pcf 
+par -w -intstyle ise -ol high -mt off InstManager_map.ncd InstManager.ncd InstManager.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml InstManager.twx InstManager.ncd -o InstManager.twr InstManager.pcf 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/InstManager.xst" -ofn "E:/CPU/RTL/PANZER16/InstManager.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/InstManager.xst" -ofn "E:/CPU/RTL/PANZER16/InstManager.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/InstManager.xst" -ofn "E:/CPU/RTL/PANZER16/InstManager.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/InstManager.xst" -ofn "E:/CPU/RTL/PANZER16/InstManager.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/InstManager.xst" -ofn "E:/CPU/RTL/PANZER16/InstManager.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/InstManager.xst" -ofn "E:/CPU/RTL/PANZER16/InstManager.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/InstManager.xst" -ofn "E:/CPU/RTL/PANZER16/InstManager.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/InstManager.xst" -ofn "E:/CPU/RTL/PANZER16/InstManager.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/InstManager.xst" -ofn "E:/CPU/RTL/PANZER16/InstManager.syr" 

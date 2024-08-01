@@ -1,0 +1,4 @@
+vhdl work "Register_2Bit.vhd"
+vhdl work "Register_16Bit.vhd"
+vhdl work "Mux3_3.vhd"
+vhdl work "ControlUnit.vhd"

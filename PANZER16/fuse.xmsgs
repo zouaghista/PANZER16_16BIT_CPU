@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="89" delta="unknown" >"E:/CPU/RTL/PANZER16/InstManagerV2.vhd" Line 122: &lt;<arg fmt="%s" index="1">demux1_4</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="329" delta="unknown" >"E:/CPU/RTL/PANZER16/InstManagerV2TestBench.v" Line 68: Target &lt;<arg fmt="%s" index="1">PDataIn</arg>&gt; of concurrent assignment or output port connection should be a net type.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="329" delta="unknown" >"E:/CPU/RTL/PANZER16/InstManagerV2TestBench.v" Line 69: Target &lt;<arg fmt="%s" index="1">PReady</arg>&gt; of concurrent assignment or output port connection should be a net type.
+</msg>
+
+<msg type="warning" file="Simulator" num="648" delta="unknown" >&quot;<arg fmt="%s" index="1">E:/CPU/RTL/PANZER16/InstManagerV2.vhd</arg>&quot; Line <arg fmt="%d" index="2">122</arg>. Instance <arg fmt="%s" index="3">demux1_4</arg> is unbound
+</msg>
+
+</messages>
+

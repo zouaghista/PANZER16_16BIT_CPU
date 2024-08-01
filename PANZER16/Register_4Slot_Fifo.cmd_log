@@ -1,0 +1,87 @@
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 Register_4Slot_Fifo.ngc Register_4Slot_Fifo.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Register_4Slot_Fifo_map.ncd Register_4Slot_Fifo.ngd Register_4Slot_Fifo.pcf 
+par -w -intstyle ise -ol high -mt off Register_4Slot_Fifo_map.ncd Register_4Slot_Fifo.ncd Register_4Slot_Fifo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Register_4Slot_Fifo.twx Register_4Slot_Fifo.ncd -o Register_4Slot_Fifo.twr Register_4Slot_Fifo.pcf 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 Register_4Slot_Fifo.ngc Register_4Slot_Fifo.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Register_4Slot_Fifo_map.ncd Register_4Slot_Fifo.ngd Register_4Slot_Fifo.pcf 
+par -w -intstyle ise -ol high -mt off Register_4Slot_Fifo_map.ncd Register_4Slot_Fifo.ncd Register_4Slot_Fifo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Register_4Slot_Fifo.twx Register_4Slot_Fifo.ncd -o Register_4Slot_Fifo.twr Register_4Slot_Fifo.pcf 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 Register_4Slot_Fifo.ngc Register_4Slot_Fifo.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Register_4Slot_Fifo_map.ncd Register_4Slot_Fifo.ngd Register_4Slot_Fifo.pcf 
+par -w -intstyle ise -ol high -mt off Register_4Slot_Fifo_map.ncd Register_4Slot_Fifo.ncd Register_4Slot_Fifo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Register_4Slot_Fifo.twx Register_4Slot_Fifo.ncd -o Register_4Slot_Fifo.twr Register_4Slot_Fifo.pcf 
+bitgen -intstyle ise -f Register_4Slot_Fifo.ut Register_4Slot_Fifo.ncd 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 Register_4Slot_Fifo.ngc Register_4Slot_Fifo.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Register_4Slot_Fifo_map.ncd Register_4Slot_Fifo.ngd Register_4Slot_Fifo.pcf 
+par -w -intstyle ise -ol high -mt off Register_4Slot_Fifo_map.ncd Register_4Slot_Fifo.ncd Register_4Slot_Fifo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Register_4Slot_Fifo.twx Register_4Slot_Fifo.ncd -o Register_4Slot_Fifo.twr Register_4Slot_Fifo.pcf 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 Register_4Slot_Fifo.ngc Register_4Slot_Fifo.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Register_4Slot_Fifo_map.ncd Register_4Slot_Fifo.ngd Register_4Slot_Fifo.pcf 
+par -w -intstyle ise -ol high -mt off Register_4Slot_Fifo_map.ncd Register_4Slot_Fifo.ncd Register_4Slot_Fifo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Register_4Slot_Fifo.twx Register_4Slot_Fifo.ncd -o Register_4Slot_Fifo.twr Register_4Slot_Fifo.pcf 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 Register_4Slot_Fifo.ngc Register_4Slot_Fifo.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Register_4Slot_Fifo_map.ncd Register_4Slot_Fifo.ngd Register_4Slot_Fifo.pcf 
+par -w -intstyle ise -ol high -mt off Register_4Slot_Fifo_map.ncd Register_4Slot_Fifo.ncd Register_4Slot_Fifo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Register_4Slot_Fifo.twx Register_4Slot_Fifo.ncd -o Register_4Slot_Fifo.twr Register_4Slot_Fifo.pcf 
+xst -intstyle ise -ifn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.xst" -ofn "E:/CPU/RTL/PANZER16/Register_4Slot_Fifo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 Register_4Slot_Fifo.ngc Register_4Slot_Fifo.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Register_4Slot_Fifo_map.ncd Register_4Slot_Fifo.ngd Register_4Slot_Fifo.pcf 
+par -w -intstyle ise -ol high -mt off Register_4Slot_Fifo_map.ncd Register_4Slot_Fifo.ncd Register_4Slot_Fifo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Register_4Slot_Fifo.twx Register_4Slot_Fifo.ncd -o Register_4Slot_Fifo.twr Register_4Slot_Fifo.pcf 

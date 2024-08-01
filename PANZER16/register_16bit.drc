@@ -1,0 +1,8 @@
+Release 14.4 Drc P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Mon Mar 18 03:17:56 2024
+
+drc -z Register_16Bit.ncd Register_16Bit.pcf
+
+DRC detected 0 errors and 0 warnings.

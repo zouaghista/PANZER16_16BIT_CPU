@@ -1,0 +1,93 @@
+--------------------------------------------------------------------------------
+Release 14.4 Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+E:\xiling\14.4\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml MainCPU.twx MainCPU.ncd -o MainCPU.twr MainCPU.pcf
+
+Design file:              MainCPU.ncd
+Physical constraint file: MainCPU.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2012-12-04)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock Clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+DPReady     |    2.089(R)|      SLOW  |   -1.295(R)|      FAST  |Clk_BUFGP         |   0.000|
+IPReadBus<0>|    2.222(R)|      SLOW  |   -1.190(R)|      FAST  |Clk_BUFGP         |   0.000|
+IPReadBus<1>|    2.410(R)|      SLOW  |   -1.202(R)|      FAST  |Clk_BUFGP         |   0.000|
+IPReadBus<2>|    2.356(R)|      SLOW  |   -1.296(R)|      FAST  |Clk_BUFGP         |   0.000|
+IPReadBus<3>|    2.274(R)|      SLOW  |   -1.303(R)|      FAST  |Clk_BUFGP         |   0.000|
+IPReadBus<6>|    2.074(R)|      SLOW  |   -1.067(R)|      FAST  |Clk_BUFGP         |   0.000|
+IPReady     |    3.880(R)|      SLOW  |   -2.013(R)|      FAST  |Clk_BUFGP         |   0.000|
+RST         |    3.498(R)|      SLOW  |   -1.204(R)|      FAST  |Clk_BUFGP         |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock Clk to Pad
+---------------+-----------------+------------+-----------------+------------+------------------+--------+
+               |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination    |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+---------------+-----------------+------------+-----------------+------------+------------------+--------+
+DPTrans        |         9.799(R)|      SLOW  |         5.169(R)|      FAST  |Clk_BUFGP         |   0.000|
+IPAdressBus<0> |         8.885(R)|      SLOW  |         4.790(R)|      FAST  |Clk_BUFGP         |   0.000|
+IPAdressBus<1> |         8.979(R)|      SLOW  |         4.835(R)|      FAST  |Clk_BUFGP         |   0.000|
+IPAdressBus<2> |         8.907(R)|      SLOW  |         4.840(R)|      FAST  |Clk_BUFGP         |   0.000|
+IPAdressBus<3> |         9.002(R)|      SLOW  |         4.853(R)|      FAST  |Clk_BUFGP         |   0.000|
+IPAdressBus<4> |         8.555(R)|      SLOW  |         4.579(R)|      FAST  |Clk_BUFGP         |   0.000|
+IPAdressBus<5> |         8.608(R)|      SLOW  |         4.632(R)|      FAST  |Clk_BUFGP         |   0.000|
+IPAdressBus<6> |         8.448(R)|      SLOW  |         4.536(R)|      FAST  |Clk_BUFGP         |   0.000|
+IPAdressBus<7> |         8.426(R)|      SLOW  |         4.463(R)|      FAST  |Clk_BUFGP         |   0.000|
+IPAdressBus<8> |         8.474(R)|      SLOW  |         4.491(R)|      FAST  |Clk_BUFGP         |   0.000|
+IPAdressBus<9> |         8.508(R)|      SLOW  |         4.525(R)|      FAST  |Clk_BUFGP         |   0.000|
+IPAdressBus<10>|         8.515(R)|      SLOW  |         4.558(R)|      FAST  |Clk_BUFGP         |   0.000|
+IPAdressBus<11>|         8.649(R)|      SLOW  |         4.595(R)|      FAST  |Clk_BUFGP         |   0.000|
+IPAdressBus<12>|         8.418(R)|      SLOW  |         4.455(R)|      FAST  |Clk_BUFGP         |   0.000|
+IPAdressBus<13>|         8.468(R)|      SLOW  |         4.505(R)|      FAST  |Clk_BUFGP         |   0.000|
+IPAdressBus<14>|         8.308(R)|      SLOW  |         4.409(R)|      FAST  |Clk_BUFGP         |   0.000|
+IPAdressBus<15>|         8.382(R)|      SLOW  |         4.439(R)|      FAST  |Clk_BUFGP         |   0.000|
+IPTrans        |         9.954(R)|      SLOW  |         5.271(R)|      FAST  |Clk_BUFGP         |   0.000|
+---------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock Clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk            |    3.391|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Mon Jun 03 19:18:22 2024 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4576 MB
+
+
+
